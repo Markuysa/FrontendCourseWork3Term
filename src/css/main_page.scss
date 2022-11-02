@@ -1,0 +1,46 @@
+@import url("../css/resetFile.css");
+@import url("../css/fonts.css");
+.wrapper{
+    height: 100vh;
+    background: url("../img/meditation_image.png") fixed center center;
+    background-size:cover;
+    background-attachment: unset;
+    .main_content{
+        .title{
+            position: absolute;
+            bottom: 15vh;
+            left:20vh;
+            .title_header{
+                font-family: "Gilroy Light";
+                color: #FBD784;
+                font-size: 18px;
+                text-transform: uppercase;
+                transform: translate(0,-100%);
+                .title_header_rectangle{
+                    background-image: url("../img/Rectangle\ 2.1.png");
+                    background-position: left center;
+                    background-repeat: no-repeat;
+                    padding-left:100px;
+                }
+            }
+            .title_description{
+                font-size: 60px;
+                font-family: "Chronicle Display Semibold","Times New Roman";
+                color: white;
+            }
+            .title_scroll_button{
+                transform: translateY(5vh);
+                .scroll_button {
+                    font-family: "Gilroy Light";
+                    background-image: url("../img/arrow_downward_24px.png");
+                    background-position: right center;
+                    background-repeat: no-repeat;
+                    font-size: 18px;
+                    padding-right:25px;
+                    color: white;
+                }
+            }
+        } 
+
+    }
+}
