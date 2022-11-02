@@ -1,0 +1,51 @@
+
+@import url("../css/fonts.css");
+
+.login_wrapper{
+    margin:100px;
+    width: 250px;
+    h1{
+
+        font-family: "Gilroy Light";
+        font-size: 52px;
+        /* or 100% */
+
+        letter-spacing: -0.06em;
+        color: #1E1E1E;
+        margin-bottom: 40px;
+    }
+    label{
+        font-family: "Gilroy Light";
+        
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+    .additional_features{
+        margin-top:10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .buttons_block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:40px;
+        *{
+            margin:2px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .input_fields{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        section{
+            width: 100%;
+        }
+    }
+}

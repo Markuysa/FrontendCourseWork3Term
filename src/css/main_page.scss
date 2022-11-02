@@ -1,11 +1,11 @@
 @import url("../css/resetFile.css");
 @import url("../css/fonts.css");
 .wrapper{
-    height: 100vh;
-    background: url("../img/meditation_image.png") fixed center center;
-    background-size:cover;
-    background-attachment: unset;
-    .main_content{
+    background: url("../img/meditation_image.png") no-repeat center center fixed;
+    background-position: 0;
+    background-size: cover;
+    .first_page_element{
+        height: 100vh;
         .title{
             position: absolute;
             bottom: 15vh;
@@ -29,6 +29,9 @@
                 color: white;
             }
             .title_scroll_button{
+                button{
+                    background-color: transparent;
+                }
                 transform: translateY(5vh);
                 .scroll_button {
                     font-family: "Gilroy Light";
@@ -42,5 +45,9 @@
             }
         } 
 
+    }
+    .second_landing, .third_landing{
+        height: 100vh;
+        background-color: #FBD784;
     }
 }

@@ -1,38 +1,43 @@
 @import url("../css/resetFile.css");
 @import url("../css/fonts.css");
 .wrapper {
-  height: 100vh;
-  background: url("../img/meditation_image.png") fixed center center;
+  background: url("../img/meditation_image.png") no-repeat center center fixed;
+  background-position: 0;
   background-size: cover;
-  background-attachment: unset;
 }
-.wrapper .main_content .title {
+.wrapper .first_page_element {
+  height: 100vh;
+}
+.wrapper .first_page_element .title {
   position: absolute;
   bottom: 15vh;
   left: 20vh;
 }
-.wrapper .main_content .title .title_header {
+.wrapper .first_page_element .title .title_header {
   font-family: "Gilroy Light";
   color: #FBD784;
   font-size: 18px;
   text-transform: uppercase;
   transform: translate(0, -100%);
 }
-.wrapper .main_content .title .title_header .title_header_rectangle {
+.wrapper .first_page_element .title .title_header .title_header_rectangle {
   background-image: url("../img/Rectangle 2.1.png");
   background-position: left center;
   background-repeat: no-repeat;
   padding-left: 100px;
 }
-.wrapper .main_content .title .title_description {
+.wrapper .first_page_element .title .title_description {
   font-size: 60px;
   font-family: "Chronicle Display Semibold", "Times New Roman";
   color: white;
 }
-.wrapper .main_content .title .title_scroll_button {
+.wrapper .first_page_element .title .title_scroll_button {
   transform: translateY(5vh);
 }
-.wrapper .main_content .title .title_scroll_button .scroll_button {
+.wrapper .first_page_element .title .title_scroll_button button {
+  background-color: transparent;
+}
+.wrapper .first_page_element .title .title_scroll_button .scroll_button {
   font-family: "Gilroy Light";
   background-image: url("../img/arrow_downward_24px.png");
   background-position: right center;
@@ -40,4 +45,8 @@
   font-size: 18px;
   padding-right: 25px;
   color: white;
+}
+.wrapper .second_landing, .wrapper .third_landing {
+  height: 100vh;
+  background-color: #FBD784;
 }/*# sourceMappingURL=main_page.css.map */

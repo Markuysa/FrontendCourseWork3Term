@@ -8,13 +8,13 @@ const HeaderMain = () => {
             </div>
             <div className="header_options_list">
                 <ul className="options_list">
-                    <li className="options_list_item">Equipment</li>
-                    <li className="options_list_item">About us</li>
-                    <li className="options_list_item">Blog</li>
+                    <a href='#'><li className="options_list_item">Meditate</li></a>
+                    <a href='#'><li className="options_list_item">About us</li></a>
+                    <a href='#'><li className="options_list_item">Blog</li></a>
                 </ul>
             </div>
             <div className="header_account">
-                <span className="icon">Account</span>
+                <a><span className="icon">Account</span></a>
             </div>
         </header>
     );

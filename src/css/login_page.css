@@ -1,0 +1,46 @@
+@import url("../css/fonts.css");
+.login_wrapper {
+  margin: 100px;
+  width: 250px;
+}
+.login_wrapper h1 {
+  font-family: "Gilroy Light";
+  font-size: 52px;
+  /* or 100% */
+  letter-spacing: -0.06em;
+  color: #1E1E1E;
+  margin-bottom: 40px;
+}
+.login_wrapper label {
+  font-family: "Gilroy Light";
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+.login_wrapper .additional_features {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.login_wrapper .buttons_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.login_wrapper .buttons_block * {
+  margin: 2px;
+}
+.login_wrapper .buttons_block p {
+  font-size: 16px;
+}
+.login_wrapper .input_fields {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login_wrapper .input_fields section {
+  width: 100%;
+}/*# sourceMappingURL=login_page.css.map */
