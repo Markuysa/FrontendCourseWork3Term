@@ -1,14 +1,12 @@
 @import url("../css/resetFile.css");
-html {
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-}
-
 .card_wrapper {
   overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
 }
 .card_wrapper .card_image {
@@ -27,16 +25,19 @@ body {
 .card_wrapper .card {
   width: 250px;
   height: 350px;
-  background-color: white;
+  background-color: rgb(170, 225, 210);
   padding: 10px;
   margin: 10px;
 }
 .card_wrapper .card_title {
   height: 100%;
   width: 100%;
-  background-color: blue;
+  background-color: rgb(225, 239, 133);
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
   line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+.card_wrapper .card_title:hover {
+  transition: 1.2s;
 }/*# sourceMappingURL=meditation_card.css.map */
