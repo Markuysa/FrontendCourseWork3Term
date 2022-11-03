@@ -1,9 +1,19 @@
 @import url("../css/fonts.css");
-.login_wrapper {
+.l_wrapper {
+  height: 100vh;
+  position: relative;
+}
+.l_wrapper .login_wrapper {
+  position: absolute;
+  right: 100px;
   margin: 100px;
   width: 250px;
+  background-color: white;
 }
-.login_wrapper h1 {
+.l_wrapper .login_wrapper .container {
+  position: absolute;
+}
+.l_wrapper .login_wrapper h1 {
   font-family: "Gilroy Light";
   font-size: 52px;
   /* or 100% */
@@ -11,36 +21,46 @@
   color: #1E1E1E;
   margin-bottom: 40px;
 }
-.login_wrapper label {
+.l_wrapper .login_wrapper label {
   font-family: "Gilroy Light";
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
-.login_wrapper .additional_features {
+.l_wrapper .login_wrapper .additional_features {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.login_wrapper .buttons_block {
+.l_wrapper .login_wrapper .buttons_block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
 }
-.login_wrapper .buttons_block * {
+.l_wrapper .login_wrapper .buttons_block * {
   margin: 2px;
 }
-.login_wrapper .buttons_block p {
+.l_wrapper .login_wrapper .buttons_block p {
   font-size: 16px;
 }
-.login_wrapper .input_fields {
+.l_wrapper .login_wrapper .input_fields {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.login_wrapper .input_fields section {
+.l_wrapper .login_wrapper .input_fields section {
   width: 100%;
+}
+.l_wrapper .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: red;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }/*# sourceMappingURL=login_page.css.map */

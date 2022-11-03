@@ -8,7 +8,7 @@ const HeaderMain = () => {
             </div>
             <div className="header_options_list">
                 <ul className="options_list">
-                    <a href='#'><li className="options_list_item">Meditate</li></a>
+                    <a href='/login'><li className="options_list_item">Meditate</li></a>
                     <a href='#'><li className="options_list_item">About us</li></a>
                     <a href='#'><li className="options_list_item">Blog</li></a>
                 </ul>

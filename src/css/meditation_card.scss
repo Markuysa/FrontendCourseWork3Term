@@ -1,14 +1,10 @@
 @import url("../css/resetFile.css");
 
-html{
-    box-sizing: border-box;
-}
-body{
-    height: 100vh;
-}
 
 .card_wrapper{
     overflow: hidden;
+    width: fit-content;
+    height: fit-content;
     position: relative;
     .card_image{
         position: relative;
@@ -26,7 +22,7 @@ body{
     .card{
         width: 250px;
         height: 350px;
-        background-color: white;
+        background-color: rgb(170, 225, 210);
         padding: 10px;
         margin:10px;
     }
@@ -34,10 +30,14 @@ body{
         
         height: 100%;
         width: 100%;
-        background-color: blue;
+        background-color: rgb(225, 239, 133);
         display: -webkit-box;
         -webkit-line-clamp: 2; /* number of lines to show */
                 line-clamp: 2; 
         -webkit-box-orient: vertical;
+        &:hover{
+            
+            transition: 1.2s;
+        }
     }
 }
