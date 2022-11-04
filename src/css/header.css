@@ -6,6 +6,7 @@ html {
 }
 
 .header {
+  overflow: hidden;
   width: 100%;
   position: absolute;
   top: 0;
@@ -35,6 +36,7 @@ html {
   font-family: "Gilroy Light";
   color: white;
   transform: translateX(100px);
+  position: relative;
 }
 .header .header_account .icon {
   background-image: url("../img/user.png");
@@ -42,10 +44,27 @@ html {
   background-repeat: no-repeat;
   padding-left: 25px; /* Or size of icon + spacing */
 }
+.header .header_account__asideMenu {
+  height: 100vw;
+  right: 0;
+  width: 30%;
+  transform: translateX(100%);
+  position: absolute;
+  background-color: red;
+}
+.header .header_account__asideMenu li {
+  font-size: 18px;
+  margin: 20px;
+}
 .header .header_logo {
   font-family: "Chronicle Display Semibold", "Times New Roman";
   font-size: 30px;
-  transform: translateX(-100px);
+  transform: translateX(-100%);
+}
+
+.header_account__asideMenu.active {
+  transition: 1s;
+  transform: translateX(0);
 }
 
 /*Убрать полосу прокрутки у элемента*/

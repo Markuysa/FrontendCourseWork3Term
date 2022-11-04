@@ -6,7 +6,7 @@ import { useState } from 'react';
 function App() {
 
   const [meditations, setMeditations]= useState([
-    {id:1,title: "asfas",img: "https://www.polsov.com/upload/014/u1405/d/f/b90242d0.jpg",rating: 4.1},
+    {id:1,title: "asfas",img: "https://ucare.timepad.ru/d496d280-6a53-4aa7-89e3-038cf3acf5d1/poster_event_2003069.jpg",rating: 4.1},
     {id:2,title: "asd",img: "https://www.polsov.com/upload/014/u1405/d/f/b90242d0.jpg",rating: 4.4},
     {id:3,title: "cc",img: "https://www.polsov.com/upload/014/u1405/d/f/b90242d0.jpg",rating: 4.0},
     {id:4,title: "aa",img: "https://www.polsov.com/upload/014/u1405/d/f/b90242d0.jpg",rating: 5.0},

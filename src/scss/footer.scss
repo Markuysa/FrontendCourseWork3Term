@@ -1,0 +1,69 @@
+
+@import url("../css/fonts.css");
+.footer{
+    a{
+        color: white;
+    }
+    font-family: 'Gilroy Light'; 
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #759B80;
+    
+    .footer-content{
+        h2{
+            font-family: 'Gilroy Bold'; 
+            font-size: 24px;
+            color: #FBD784;
+        }
+        ul{
+            margin-top:5px;
+        }
+        max-width: 1432px;
+        max-height: 350px;
+        color:white;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        padding: 100px;
+        position: relative;
+        margin-bottom: 50px;
+        ul{
+            li{
+                margin:30px;
+                margin-left:0px;
+                &:hover{
+                    transform:scale(1.1) ;
+                    transition: 1s;
+                }
+            }
+        }
+        .footer-content__more{
+            grid-column: 4/5;
+            
+        }
+        .footer-content__copyright{
+            grid-column: span 2;
+            span{
+                font-size: 18px;
+            }
+            .copyright__text{
+                display: block;
+                bottom: 10px;
+                position: absolute;
+                opacity: 0.5;
+            }
+            .copyright__title{
+                display: block;
+                margin-top:20px;
+            }
+        }
+        .footer-content__links{
+            grid-column: 5/6;
+            margin-left:10%;
+        }
+    }
+}

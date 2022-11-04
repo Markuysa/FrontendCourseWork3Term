@@ -45,20 +45,27 @@
 
 
 .meditation-card-wrapper{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .meditation-card__image{
         width: 100%;
         height: 270px;
         object-fit: contain;
+        object-position: 0;
     }
-    .meditation-card__title{
-        font-family: Times;
-        font-size: 18px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    .meditation-card__rating{
-        font-family: Times;
-        font-size: 18px;
-        text-align: center;
+    .meditation-card__textContent{
+        .textContent__title{
+            font-family: Times;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .textContent__rating{
+            font-family: Times;
+            font-size: 18px;
+            text-align: center;
+        }   
     }
 }

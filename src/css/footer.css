@@ -1,0 +1,63 @@
+@import url("../css/fonts.css");
+.footer {
+  font-family: "Gilroy Light";
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #759B80;
+}
+.footer a {
+  color: white;
+}
+.footer .footer-content {
+  max-width: 1432px;
+  max-height: 350px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 100px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.footer .footer-content h2 {
+  font-family: "Gilroy Bold";
+  font-size: 24px;
+  color: #FBD784;
+}
+.footer .footer-content ul {
+  margin-top: 5px;
+}
+.footer .footer-content ul li {
+  margin: 30px;
+  margin-left: 0px;
+}
+.footer .footer-content ul li:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.footer .footer-content .footer-content__more {
+  grid-column: 4/5;
+}
+.footer .footer-content .footer-content__copyright {
+  grid-column: span 2;
+}
+.footer .footer-content .footer-content__copyright span {
+  font-size: 18px;
+}
+.footer .footer-content .footer-content__copyright .copyright__text {
+  display: block;
+  bottom: 10px;
+  position: absolute;
+  opacity: 0.5;
+}
+.footer .footer-content .footer-content__copyright .copyright__title {
+  display: block;
+  margin-top: 20px;
+}
+.footer .footer-content .footer-content__links {
+  grid-column: 5/6;
+  margin-left: 10%;
+}

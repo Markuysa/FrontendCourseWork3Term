@@ -15,7 +15,7 @@ export const useSortedMeditations = (meditations,selectedSort)=>{
 
 export const useSortedAndSearchMeditations = (meditations,selectedSort,searchQuery)=>{
 
-    
+    const sortedMeditations=useSortedMeditations(meditations,selectedSort);
     console.log(sortedMeditations)
     const sortedAndSearchedMeditations = useMemo(()=>{
         return sortedMeditations.filter(meditation => meditation.title.toLowerCase().includes(searchQuery.toLowerCase()))
