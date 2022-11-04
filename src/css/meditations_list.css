@@ -1,16 +1,9 @@
 @import url("../css/resetFile.css");
 @import url("../css/fonts.css");
 .meditations_list_content {
-  height: 100vh;
-  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.meditations_list_content .meditations_list_conten_item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.meditations_list_content .search_fields {
+  width: 300px;
 }
-.meditations_list_content .prikol {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}/*# sourceMappingURL=meditations_list.css.map */

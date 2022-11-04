@@ -1,43 +1,43 @@
 @import url("../css/resetFile.css");
 @import url("../css/fonts.css");
-.wrapper {
+.main-wrapper {
   background: url("../img/meditation_image.png") no-repeat center center fixed;
   background-position: 0;
   background-size: cover;
 }
-.wrapper .first_page_element {
+.main-wrapper .main__firstPage {
   height: 100vh;
 }
-.wrapper .first_page_element .title {
+.main-wrapper .main__firstPage .firstPage__title {
   position: absolute;
   bottom: 15vh;
   left: 20vh;
 }
-.wrapper .first_page_element .title .title_header {
+.main-wrapper .main__firstPage .firstPage__title .firstPage_title__header {
   font-family: "Gilroy Light";
   color: #FBD784;
   font-size: 18px;
   text-transform: uppercase;
   transform: translate(0, -100%);
 }
-.wrapper .first_page_element .title .title_header .title_header_rectangle {
+.main-wrapper .main__firstPage .firstPage__title .firstPage_title__header .title__header_rect {
   background-image: url("../img/Rectangle 2.1.png");
   background-position: left center;
   background-repeat: no-repeat;
   padding-left: 100px;
 }
-.wrapper .first_page_element .title .title_description {
+.main-wrapper .main__firstPage .firstPage__title .firstPage_title_descriprion {
   font-size: 60px;
   font-family: "Chronicle Display Semibold", "Times New Roman";
   color: white;
 }
-.wrapper .first_page_element .title .title_scroll_button {
+.main-wrapper .main__firstPage .firstPage__title .firstPage_title_scrollButton {
   transform: translateY(5vh);
 }
-.wrapper .first_page_element .title .title_scroll_button button {
+.main-wrapper .main__firstPage .firstPage__title .firstPage_title_scrollButton button {
   background-color: transparent;
 }
-.wrapper .first_page_element .title .title_scroll_button .scroll_button {
+.main-wrapper .main__firstPage .firstPage__title .firstPage_title_scrollButton .title__scrollButton {
   font-family: "Gilroy Light";
   background-image: url("../img/arrow_downward_24px.png");
   background-position: right center;
@@ -46,7 +46,7 @@
   padding-right: 25px;
   color: white;
 }
-.wrapper .second_landing, .wrapper .third_landing {
+.main-wrapper .second_landing, .main-wrapper .third_landing {
   height: 100vh;
   background-color: #FBD784;
-}/*# sourceMappingURL=main_page.css.map */
+}

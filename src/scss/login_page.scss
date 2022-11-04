@@ -2,13 +2,10 @@
 @import url("../css/fonts.css");
 
 
-.l_wrapper{
+.login-wrapper{
     height: 100vh;
     position: relative;
-    .login_wrapper{
-        .container{
-            position: absolute;
-        }
+    .login-container{
         position: absolute;
         right: 100px;
         margin:100px;
@@ -19,7 +16,6 @@
             font-family: "Gilroy Light";
             font-size: 52px;
             /* or 100% */
-
             letter-spacing: -0.06em;
             color: #1E1E1E;
             margin-bottom: 40px;
@@ -30,14 +26,14 @@
             margin-bottom: 0.5em;
             margin-top: 0.5em;
         }
-        .additional_features{
+        .form__additionalFeatures{
             margin-top:10px;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
         }
-        .buttons_block{
+        .form__buttonsBlock{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -51,7 +47,7 @@
             }
 
         }
-        .input_fields{
+        .form__inputFields{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -60,7 +56,7 @@
             }
         }
     }
-    .footer{
+    .login-footer{
         position: absolute;
         width: 100%;
         bottom: 0;

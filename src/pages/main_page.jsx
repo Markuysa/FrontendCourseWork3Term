@@ -10,18 +10,18 @@ const MainPage = () =>{
         });
     };
     return (
-        <div className="wrapper">
+        <div className="main-wrapper">
             <HeaderMain />
-            <div className="first_page_element">
-                <div className="title">
-                    <div className="title_header">
-                        <span className="title_header_rectangle">Meditation service</span>
+            <div className="main__firstPage">
+                <div className="firstPage__title">
+                    <div className="firstPage_title__header">
+                        <span className="title__header_rect">Meditation service</span>
                     </div>
-                    <div className="title_description">
+                    <div className="firstPage_title_descriprion">
                         <h1>Be Prepared To <br /> Comprehend The True Being</h1>
                     </div>
-                    <div className="title_scroll_button">
-                        <button onClick={scrollDown}><span className="scroll_button">scroll down</span></button>
+                    <div className="firstPage_title_scrollButton">
+                        <button onClick={scrollDown}><span className="title__scrollButton">scroll down</span></button>
                     </div>
                 </div>
             </div>
