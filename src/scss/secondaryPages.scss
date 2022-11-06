@@ -1,0 +1,81 @@
+
+
+@import url("../css/resetFile.css");
+
+@import url("../css/fonts.css");
+
+.page-wrapper{
+    height: 100vh;
+    z-index:1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .page-wrapper-content{
+        max-width: 1462px;
+        min-height: 520px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .page-wrapper-content__numberImage{
+
+            background: url("../img/icons/1.png") no-repeat center center;
+            width: 240px;
+            height: 240px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .page-wrapper-content__text{
+            max-width: 800px;
+            padding: 100px;
+            .text__header_top{
+                background-image: url("../img/Rectangle\ 2.1.png");
+                background-position: left center;
+                background-repeat: no-repeat;
+                font-size: 18px;
+                padding-left:85px;  
+                color: #FBD784;
+                font-family: "Gilroy Bold";
+                text-transform: uppercase;
+                line-height: 22px;
+                font-size: 16px;
+                letter-spacing: 6px;
+            }
+            .text__header_title{
+
+                font-family: 'Chronicle Display Semibold';
+                font-style: normal;
+                font-size: 64px;
+                line-height: 77px;
+    
+                color: #FFFFFF;
+            }
+            .text__header_description{
+                font-size: 18px;
+                line-height: 32px;  
+                font-family: "Gilroy Light";
+                color: white;
+            }
+            .text__header_readMore{
+                background-image: url("../img/arrowLeft.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                font-size: 18px;
+                padding-right:35px;     
+                color: #FBD784;
+                font-family: "Gilroy Bold";
+            }
+        }
+        .page-wrapper-content__image{
+                width: 465px;
+                height: 620px;
+                background: url("../img/contentImages/2.png") no-repeat center center;
+                background-size: contain;
+                margin-right: 100px;
+        }
+    }
+
+}
