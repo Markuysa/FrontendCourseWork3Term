@@ -50,9 +50,12 @@
   padding-right: 25px;
   color: white;
 }
-.main-wrapper .second_landing, .main-wrapper .third_landing {
+.main-wrapper .second_landing, .main-wrapper .third_landing, .main-wrapper .fourth_landing {
   height: 100vh;
   background: #759B80;
   width: 100%;
   position: relative;
+}
+.main-wrapper .third_landing, .main-wrapper .fourth_landing {
+  z-index: -1;
 }

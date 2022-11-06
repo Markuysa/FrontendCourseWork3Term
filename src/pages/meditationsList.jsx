@@ -1,5 +1,5 @@
 import '../css/meditations_list.css'
-import Meditation from "./meditation_card";
+import Meditation from "../components/meditation_card";
 import MeditationsSelect from '../UI/select/MeditationsSelect';
 import { useMemo, useState } from 'react';
 import { useSortedAndSearchMeditations } from '../hooks/useMeditations.js';

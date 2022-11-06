@@ -1,6 +1,6 @@
 import MainPage from './pages/main_page'
 import Login from './pages/login'
-import MeditationsList from './components/meditationsList';
+import MeditationsList from './pages/meditationsList';
 import {BrowserRouter, Routes,Route} from 'react-router-dom'
 import { useState } from 'react';
 function App() {

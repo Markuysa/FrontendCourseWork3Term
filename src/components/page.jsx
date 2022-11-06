@@ -1,13 +1,14 @@
 
+import '../css/secondaryPages.css'
+import PageLeftAlign from './pageLeftAlign';
+import PageRightAlign from './pageRIghtAlign';
 
 const Page = ({page})=>{
-    //finish here
+    
     return(
-        <div className="pagS">
-            <h1>{page.title}</h1>
-        </div>
-
+        page.id==2
+                ?<PageLeftAlign page = {page}/>
+                :<PageRightAlign page = {page}/>
     );
-
 }
 export default Page;

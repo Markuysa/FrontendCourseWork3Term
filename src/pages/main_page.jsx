@@ -11,9 +11,9 @@ const MainPage = () =>{
         });
     };
     const pagesContent = ([
-        {title:"What level of  hiker are you?",firstTitle:"Get Started",description: "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? ",img:"https://wallpapersgood.ru/wallpapers/main/201249/gorod-franciya-parizh-yejfeleva-dea67b8.jpg"},
-        {title:"What level of  hiker are you?",firstTitle:"Get Started",description: "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? ",img:"https://wallpapersgood.ru/wallpapers/main/201249/gorod-franciya-parizh-yejfeleva-dea67b8.jpg"},
-        {title:"What level of  hiker are you?",firstTitle:"Get Started",description: "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? ",img:"https://wallpapersgood.ru/wallpapers/main/201249/gorod-franciya-parizh-yejfeleva-dea67b8.jpg"}
+        {id:1,title:"Determining Your level of awareness",topTitle:"Get Started",description: "Before starting classes, it is necessary to determine your level of preparedness for such a difficult path of cognition and awareness. To do this, you should take a small test, which will determine your level. Are you ready to start your journey? ",img:"https://i.sunhome.ru/journal/253/meditaciya-i-zdorove.orig.jpg"},
+        {id:2,title:"What level of  hiker are you?",topTitle:"The beginning",description: "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? ",img:"https://i.sunhome.ru/journal/253/meditaciya-i-zdorove.orig.jpg"},
+        {id:3,title:"What level of  hiker are you?",topTitle:"Get Started",description: "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? ",img:"https://i.sunhome.ru/journal/253/meditaciya-i-zdorove.orig.jpg"}
     ]);
     return (
         <div className="main-wrapper">
@@ -34,10 +34,13 @@ const MainPage = () =>{
                 </div>
             </div>
             <div className="second_landing">
-                <SecondMainPage pagesContent={pagesContent}/>
+                <SecondMainPage pagesContent={pagesContent[0]}/>
             </div>
             <div className="third_landing">
-                <h1>Coming soon...</h1>
+                <SecondMainPage pagesContent={pagesContent[1]}/>
+            </div>
+            <div className="fourth_landing">
+                <SecondMainPage pagesContent={pagesContent[2]}/>
             </div>
             <footer className="footer">
                 <Footer />

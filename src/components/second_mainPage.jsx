@@ -1,13 +1,14 @@
 
 import Page from "./page";
+import "../css/secondaryPagesStyle.css"
 const SecondMainPage = ({pagesContent})=>{
-    console.log(pagesContent)
     return (
-        <div>
+        <div className="SecondaryPages">
             {
-                pagesContent.map( (page) =>
-                    <Page page={page}/>
-                ) 
+                // pagesContent.map( (page) =>
+                //     <Page page={page} key={pagesContent.id}/>
+                // ) 
+                <Page page={pagesContent} key={pagesContent.id}/>
             }
         </div>
     );

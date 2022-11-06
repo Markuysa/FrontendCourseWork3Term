@@ -21,7 +21,7 @@ const Footer = ()=>{
                         <a href=""><li>Contributors & Writers</li></a>
                         <a href=""><li>Write For Us</li></a>
                         <a href=""><li>Contact Us</li></a>
-                        <a href=""><li>Privacy Policy</li></a>
+                        <a href=""><li>Pricing</li></a>
                     </ul>
 
                 </div>

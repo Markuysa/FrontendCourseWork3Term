@@ -50,10 +50,13 @@
 
         }
     }
-    .second_landing, .third_landing{
+    .second_landing, .third_landing,.fourth_landing{
         height: 100vh;
         background: #759B80;
         width: 100%;
         position: relative;
+    }
+    .third_landing,.fourth_landing{
+        z-index: -1;
     }
 }
