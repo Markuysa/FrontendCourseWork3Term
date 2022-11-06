@@ -1,0 +1,46 @@
+@import url("../css/fonts.css");
+
+.header-secondary__content{
+    // background-color: #E6D690;
+    max-width: 1200px;
+    margin-top:10px;
+    height: fit-content;
+    margin: 0 auto;
+
+    padding: 10px;
+    .header-secondary__main_nav{
+
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+        .header-secondary__navigation{
+            .header-secondary__navigation__list{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    font-family: "Chronicle Display Semibold";
+                    margin:10px;
+                }
+            }
+            
+        }
+        .header-secondary__logotype{
+            margin:0 auto;
+            display: block; 
+            position: absolute;
+            right: 50% - 3%;
+        }
+        .header-secondary__account{
+            font-family: "Chronicle Display Semibold";
+        }
+    }
+    .header-secondary__searchItems{
+        .search_input_wrapper{
+            
+        }
+    }
+
+}

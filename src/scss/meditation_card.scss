@@ -1,71 +1,64 @@
 @import url("../css/resetFile.css");
-
-
-// .meditation-card-wrapper{
-//     overflow: hidden;
-//     width: fit-content;
-//     height: fit-content;
-//     position: relative;
-//     .meditation-card{
-//         width: 350px;
-//         height: 350px;
-//         background-color: rgb(226, 228, 218);
-//         padding: 10px;
-//         margin:10px;
-//         .meditation-card__image{
-//             position: relative;
-//             overflow: hidden;
-//             height: 250px;
-//             img{
-//                 position: relative;
-//                 top: 0;
-//                 max-width: 100%;
-//                 max-height: 200px;
-//                 margin: auto;
-//                 transition: transform 0.4s;
-//             }
-//         }
-//         .meditation-card__title{
-        
-//             height: 100%;
-//             width: 100%;
-//             background-color: rgb(225, 239, 133);
-//             display: -webkit-box;
-//             -webkit-line-clamp: 2; /* number of lines to show */
-//                     line-clamp: 2; 
-//             -webkit-box-orient: vertical;
-//             &:hover{
-                
-//                 transition: 1.2s;
-//             }
-//         }
-//     }
-// }
-
-
-
-.meditation-card-wrapper{
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+@import url("../css/fonts.css");
+.meditation-card-wrapper {
+	display: block;
+	width: 31.25%;
+	float: left;
+	transition: width .2s;
+    overflow: hidden;
+    margin:10px;
+    margin: 0 auto;
+    .meditation {
+        display: block;
+        border: 3px solid #caeb47;
+        border-radius: 3px;
+        position: relative;
+        background: #caeb4734;
+        margin: 0 20px 20px 0;
+        text-decoration: none;
+        color: #474747;
+        z-index: 0;
+        height: 400px;
+    }
     .meditation-card__image{
-        width: 100%;
-        height: 270px;
-        object-fit: contain;
-        object-position: 0;
+        overflow: hidden;
+
+        img {
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
     }
     .meditation-card__textContent{
-        .textContent__title{
-            font-family: Times;
-            font-size: 18px;
-            text-align: center;
-            text-transform: uppercase;
+        position: absolute;
+        bottom: 10px;
+        font-family:"Gilroy Light";
+        padding: 10px;
+        .meditation-card__textContent__readMore{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
-        .textContent__rating{
-            font-family: Times;
-            font-size: 18px;
-            text-align: center;
-        }   
     }
+}
+
+
+
+
+@media only screen and (max-width: 925px) {
+	.meditation-card-wrapper {
+        width: 50%;
+	}
+}
+@media only screen and (max-width: 1060px) {
+	.meditation-card-wrapper {
+
+	}
+}
+
+@media only screen and (max-width: 625px) {
+	.meditation-card-wrapper {
+		width: 100%;
+
+	}
 }

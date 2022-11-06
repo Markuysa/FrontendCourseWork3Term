@@ -1,7 +1,7 @@
-import Footer from "../components/footer";
-import HeaderMain from "../components/header";
+import Footer from "../components/pageTemplates/footer";
+import HeaderMain from "../components/headers/header";
 import '../css/main_page.css'
-import SecondMainPage from "../components/second_mainPage";
+import SecondMainPage from "../components/pageTemplates/second_mainPage";
 const MainPage = () =>{
     const scrollDown = () =>{
         window.scrollTo({

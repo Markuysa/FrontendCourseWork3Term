@@ -1,6 +1,6 @@
 
 import Page from "./page";
-import "../css/secondaryPagesStyle.css"
+import "../../css/secondaryPagesStyle.css"
 const SecondMainPage = ({pagesContent})=>{
     return (
         <div className="SecondaryPages">

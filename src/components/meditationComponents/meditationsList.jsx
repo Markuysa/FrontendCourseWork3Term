@@ -1,9 +1,9 @@
-import '../css/meditations_list.css'
-import Meditation from "../components/meditation_card";
-import MeditationsSelect from '../UI/select/MeditationsSelect';
+import '../../css/meditations_list.css'
+import Meditation from "./meditation_card";
+import MeditationsSelect from '../../UI/select/MeditationsSelect';
 import { useMemo, useState } from 'react';
-import { useSortedAndSearchMeditations } from '../hooks/useMeditations.js';
-import InputField from '../UI/InputField/InputFiels';   
+import { useSortedAndSearchMeditations } from '../../hooks/useMeditations.js';
+import InputField from '../../UI/InputField/InputFiels';   
 import axios from 'axios'
 import { useEffect } from 'react';
 const MeditationsList= ({meditations, onMeditationsChange})=>{
@@ -33,9 +33,10 @@ const MeditationsList= ({meditations, onMeditationsChange})=>{
     }
     const sortedAndSearchedMeditations = useSortedAndSearchMeditations(meditations,selectedSort,searchQuery);
     return (
-        <ul className="meditations_list_content">
-            <div className="search_fields">
-                {/* <button onClick={fetchMeditations}>GET POSTS</button> */}
+
+        <ul className="meditations_list_cards">
+            {/* <div className="search_fields">
+
                 <MeditationsSelect 
                     defaultValue={"Sort by"} 
                     options = {optionsList} 
@@ -47,7 +48,7 @@ const MeditationsList= ({meditations, onMeditationsChange})=>{
                     value = {searchQuery}
                     onChange = {event => setSearchQuery(event.target.value)}
                 />
-            </div>
+            </div> */}
             {sortedAndSearchedMeditations.length
                 ?sortedAndSearchedMeditations.map( (meditation)=>
                     <Meditation 

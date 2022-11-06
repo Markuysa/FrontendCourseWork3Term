@@ -1,7 +1,8 @@
-import Logotype from "../UI/Logotype/Logotype";
 
 
-import '../css/footer.css'
+
+import '../../css/footer.css'
+import Logotype from '../../UI/Logotype/Logotype';
 const Footer = ()=>{
 
     return (

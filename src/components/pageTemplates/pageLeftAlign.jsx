@@ -3,7 +3,7 @@ const PageLeftAlign= ({page})=>{
     return (
         <div className="page-wrapper">
                     <div className="page-wrapper-content">
-                        <div style={{right:0}} className="page-wrapper-content__numberImage">
+                        <div style={{right:0 }} className="page-wrapper-content__numberImage">
                         </div>
                         <div className="page-wrapper-content__image">
                             {/* <img src = {page.img} alt="an image" />   */}
