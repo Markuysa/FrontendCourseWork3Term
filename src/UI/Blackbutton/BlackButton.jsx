@@ -6,7 +6,6 @@ const Button = ({children, ...props})=>{
         <button {...props} className={classes.button} type="submit"> 
             {children}
         </button>
-
     );
 
 };

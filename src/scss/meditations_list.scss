@@ -6,10 +6,31 @@
     gap:20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
-
+ 
     width: 100%;
 
-    .search_fields{
-        width: 300px;
-    }
 }
+
+.meditations_list_cards{
+    .search_fields{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .InputStyles_input_field__ZuvLG{
+            
+        }
+    }
+    .notFoundPage{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        
+        p{
+            margin-bottom: 100px;
+            font-family: "Gilroy Light";
+            color: black;
+            font-size: 64px;
+            text-align: center;
+        }
+    }
+}   
