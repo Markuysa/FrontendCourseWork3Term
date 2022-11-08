@@ -7,7 +7,7 @@ import "../css/meditationsListPageStyles.css"
 
 const MeditationsPage = ({meditations})=>{
     const asideItems=([
-        "To relax","To sleep","To study"
+        {title:"To relax"},{title:"To sleep"},{title:"To study"}
     ]);
     return (
         <div className="meditations_page-wrapper">

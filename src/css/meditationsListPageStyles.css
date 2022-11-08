@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: auto/1fr;
   gap: 10px;
+  margin-top: 30px;
 }
 .meditations_page__content .meditations_page__content_asideBar {
   grid-column: 1/2;

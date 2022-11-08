@@ -1,0 +1,79 @@
+@import url("../css/fonts.css");
+.meditationPage-wrapper .meditationPage-wrapper__content {
+  margin-top: 120px;
+}
+.meditationPage-wrapper .meditationPage-wrapper__content .content__meditation_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1080px;
+  height: 580px;
+  margin: 0 auto;
+}
+.meditationPage-wrapper .meditationPage-wrapper__content .content__meditation_block .meditation_block__textContent {
+  padding: 25px;
+  height: 100%;
+  margin: 10px;
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(104, 102, 102);
+}
+.meditationPage-wrapper .meditationPage-wrapper__content .content__meditation_block .meditation_block__textContent::before {
+  content: "";
+  width: 103%;
+  height: 103%;
+  border: 1px solid black;
+  position: absolute;
+}
+.meditationPage-wrapper .meditationPage-wrapper__content .content__meditation_block .meditation_block__textContent .textContent__title {
+  margin-top: 10px;
+  text-align: left;
+  color: black;
+  width: 100%;
+  font-family: "Gilroy Light";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.meditationPage-wrapper .meditationPage-wrapper__content .content__meditation_block .meditation_block__textContent .textContent__title .textContent__categories {
+  font-family: "Gilroy Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: lowercase;
+  transform: translateY(10px);
+  color: rgb(79, 78, 78);
+}
+.meditationPage-wrapper .meditationPage-wrapper__content .content__meditation_block .meditation_block__textContent .textContent__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.meditationPage-wrapper .meditationPage-wrapper__content .content__meditation_block .meditation_block__textContent .textContent__buttons * {
+  margin: 5px;
+}
+.meditationPage-wrapper .meditationPage-wrapper__content .content__meditation_block .meditation_block__textContent .textContent__description {
+  font-family: "Gilroy Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+.meditationPage-wrapper .meditationPage-wrapper__content .content__meditation_block .meditation_block__imageSwiper {
+  width: 50%;
+  margin: 10px;
+  background-color: red;
+  height: 100%;
+}
+.meditationPage-wrapper .meditationPage-wrapper__content .meditation_additionalInfo {
+  height: 100vh;
+  width: 100%;
+}

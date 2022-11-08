@@ -33,9 +33,8 @@ const MeditationsList= ({meditations, onMeditationsChange})=>{
     }
     const sortedAndSearchedMeditations = useSortedAndSearchMeditations(meditations,selectedSort,searchQuery);
     return (
-
         <ul className="meditations_list_cards">
-            {/* <div className="search_fields">
+            <div className="search_fields">
 
                 <MeditationsSelect 
                     defaultValue={"Sort by"} 
@@ -44,11 +43,11 @@ const MeditationsList= ({meditations, onMeditationsChange})=>{
                     onChange = {sortMeditations}
                 />
                 <InputField 
-                    placeholder ="Input the name"
+                    placeholder ="Filter meditations"
                     value = {searchQuery}
                     onChange = {event => setSearchQuery(event.target.value)}
                 />
-            </div> */}
+            </div>
             {sortedAndSearchedMeditations.length
                 ?sortedAndSearchedMeditations.map( (meditation)=>
                     <Meditation 
@@ -56,7 +55,7 @@ const MeditationsList= ({meditations, onMeditationsChange})=>{
                         key={meditation.id} 
                     />
                 )           
-                : <h1>No results</h1>
+                : <div className="notFoundPage"><p>No results</p></div>
             }
         </ul>
 

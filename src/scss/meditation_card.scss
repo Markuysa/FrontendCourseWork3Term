@@ -8,6 +8,14 @@
     overflow: hidden;
     margin:10px;
     margin: 0 auto;
+    &:hover{
+        transform: scale(1.01);
+        .meditation{
+            box-shadow: 5px 5px rgb(187, 186, 182);
+            transition: .3s;
+        }
+        transition: .3s;
+    }
     .meditation {
         display: block;
         border: 3px solid #caeb47;
@@ -18,7 +26,7 @@
         text-decoration: none;
         color: #474747;
         z-index: 0;
-        height: 400px;
+        height: 300px;
     }
     .meditation-card__image{
         overflow: hidden;
@@ -31,13 +39,18 @@
     }
     .meditation-card__textContent{
         position: absolute;
-        bottom: 10px;
+        width: 100%;
+        min-height: 30%;
+        bottom: 0;
         font-family:"Gilroy Light";
-        padding: 10px;
+        padding: 20px;
+        background-color: rgb(227, 237, 153);
         .meditation-card__textContent__readMore{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding: 5px;
+            padding-left:0px ;
         }
     }
 }
@@ -59,6 +72,8 @@
 @media only screen and (max-width: 625px) {
 	.meditation-card-wrapper {
 		width: 100%;
-
 	}
+    .meditation-card__image{
+        height: 70%;
+    }    
 }

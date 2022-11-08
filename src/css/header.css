@@ -44,27 +44,48 @@ html {
   background-repeat: no-repeat;
   padding-left: 25px; /* Or size of icon + spacing */
 }
-.header .header_account__asideMenu {
-  height: 100vw;
-  right: 0;
-  width: 30%;
-  transform: translateX(100%);
-  position: absolute;
+.header .header_account .header_account__dropdownMenu {
+  visibility: collapse;
   background-color: red;
+  border-radius: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  right: 20px;
+  z-index: 1000;
 }
-.header .header_account__asideMenu li {
+.header .header_account .header_account__dropdownMenu div {
+  padding: 20px;
+}
+.header .header_account .header_account__dropdownMenu div a {
+  color: white;
+}
+.header .header_account .header_account__dropdownMenu div::after {
+  width: 100%;
+  height: 1px;
+  transform: translateX(-10%);
+  background-color: black;
+  position: absolute;
+  content: "";
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.header .header_account .header_account__dropdownMenu li {
   font-size: 18px;
   margin: 20px;
+}
+.header .header_account:hover .header_account__dropdownMenu {
+  visibility: visible;
 }
 .header .header_logo {
   font-family: "Chronicle Display Semibold", "Times New Roman";
   font-size: 30px;
   transform: translateX(-100%);
-}
-
-.header_account__asideMenu.active {
-  transition: 1s;
-  transform: translateX(0);
 }
 
 /*Убрать полосу прокрутки у элемента*/

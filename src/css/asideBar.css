@@ -1,5 +1,27 @@
+@import url("../css/fonts.css");
 .asideBarItems {
   width: 290px;
   height: 100vh;
-  background-color: red;
+}
+.asideBarItems .asideBarItem {
+  padding: 10px;
+  background-color: rgb(238, 232, 232);
+  margin: 5px;
+  color: black;
+  font-size: 16px;
+  font-family: "Gilroy Light";
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.asideBarItem.active {
+  background-color: black;
+  color: White;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 925px) {
+  .asideBarItems {
+    width: 180px;
+  }
 }

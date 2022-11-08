@@ -20,7 +20,7 @@ const HeaderMain = () => {
             </div>
             <div className="header_account">
                 <a onClick={onAccountClick}><span className="icon">Account</span></a>
-                {/* <div className="header_account__dropdownMenu">
+                <div className="header_account__dropdownMenu">
                     <div><p>Signed in as <a href="">Markuysa</a></p></div>
                     <ul>
                         <li>Your profile</li>
@@ -28,16 +28,16 @@ const HeaderMain = () => {
                         <li>Upgrade Pro</li>
                         <li>Sign out</li>
                     </ul>
-                </div> */}
+                </div>
             </div>
-            <div className="header_account__asideMenu">
+            {/* <div className="header_account__asideMenu">
                 <ul>
                     <li>Your profile</li>
                     <li>Your meditations</li>
                     <li>Upgrade Pro</li>
                     <li>Sign out</li>
                 </ul>
-            </div>
+            </div> */}
         </header>
     );
 

@@ -4,7 +4,10 @@ const InputField= (props) => {
     
     return (
         // <input type = {props.type} class={classes.input} placeholder={props.placeholder}/>
-        <input {...props} className={classes.input_field}/>
+        <div className={classes.inputField}>
+            <input {...props} className={classes.input_field}></input>
+            <button className={classes.input_button} type="submit"></button>
+        </div>
     );
 
 }
