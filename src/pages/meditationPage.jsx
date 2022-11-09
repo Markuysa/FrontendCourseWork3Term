@@ -1,13 +1,11 @@
 import HeaderSecondary from "../components/headers/headerSecondary";
 import MeditationPageSlider from "../components/meditationComponents/meditationPageSlider";
 import Footer from "../components/pageTemplates/footer";
-
+import ModalVideo from "../components/pageTemplates/modalVideo";
 
 import "../css/meditationPageStyles.css"
 import Button from "../UI/Blackbutton/BlackButton";
 import WhiteButton from "../UI/WhiteButton/WhiteButton";
-
-
     const MeditationPage = ()=>{
         return(
             // <MeditationPageSlider />
@@ -16,7 +14,8 @@ import WhiteButton from "../UI/WhiteButton/WhiteButton";
                 <div className="meditationPage-wrapper__content">
                     <div className="content__meditation_block">
                         <div className="meditation_block__imageSwiper">
-
+                            
+                            <img src="https://media.kg-portal.ru/images/joker/joker_5.jpg" alt="" />
 
                         </div>
                         <div className="meditation_block__textContent">
@@ -24,7 +23,7 @@ import WhiteButton from "../UI/WhiteButton/WhiteButton";
                             <div className="textContent__title">
                                 <h1>MEDITATIONS AFTER STRESS</h1>
                                 <div className="textContent__categories">
-                                    <h2>Category: for relax </h2>
+                                    <h2>Category: to relax </h2>
                                 </div>
                             </div>  
                             <div className="textContent__description">
@@ -34,25 +33,46 @@ import WhiteButton from "../UI/WhiteButton/WhiteButton";
                                 </p>
                             </div>
                             <div className="textContent__buttons">
-                                <WhiteButton>Start</WhiteButton>
+                                {/* <WhiteButton>Start</WhiteButton> */}
+                                <ModalVideo />
                                 <WhiteButton>Add to favorite</WhiteButton>
-                                
                             </div>
                         </div>
                     </div>
                     <div className="meditation_additionalInfo">
-
+                        <div className="meditation_additionalInfo__text">
+                            <p className="additionalInfo_content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, lorem eu commodo porttitor erat. Amet mauris cursus bibendum in egestas. Nulla porttitor amet quam elit, mauris. Tortor egestas dignissim augue suspendisse rutrum pretium lobortis dolor. Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
+                                Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
+                            </p>
+                            {/* <p className="additionalInfo_readMore"></p> */}
+                        </div>
+                        <div className="meditation_additionalnfo__iconsBlock">
+                            <div className="inconsBlock__icon">
+                                <img src="https://img.icons8.com/external-outline-juicy-fish/512/external-stress-crisis-management-outline-outline-juicy-fish.png" alt="" />
+                                <p>Stress</p>
+                            </div>
+                            <div className="inconsBlock__icon">
+                                <img src="https://img.icons8.com/ios/512/nightmare.png" alt="" />
+                                <p>Nightmares</p>
+                            </div>
+                            <div className="inconsBlock__icon">
+                                <img src="https://img.icons8.com/ios/512/skull-heart--v2.png" alt="" />
+                                <p>Health issues</p>
+                            </div>
+                            <div className="inconsBlock__icon">
+                                <img src="https://img.icons8.com/ios/512/family.png" alt="" />
+                                <p>Problems with family</p>
+                            </div>
+                        </div>
                     </div>
+                    {/* <div className="meditatoin_otherProducts">
+                        
 
-                    <div className="meditatoin_otherProducts">
-
-
-                    </div>
+                    </div> */}
+                    
                     <Footer />
                 </div>
-
-
-
             </div>
         );
         

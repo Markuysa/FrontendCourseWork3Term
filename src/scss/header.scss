@@ -34,10 +34,11 @@ html{
         }
     }
     .header_account{
-        font-family: "Gilroy Light";
-        color:white;
-        transform: translateX(100px);
+        font-family: "Gilroy Bold";
+        color:rgb(0, 0, 0);
+        //transform: translateX(100px);
         position: relative;
+        
         .icon {
             background-image: url("../img/user.png");
             background-position: left center;
@@ -101,7 +102,6 @@ html{
     .header_logo{
         font-family:'Chronicle Display Semibold',"Times New Roman";
         font-size: 30px;
-        transform: translateX(-100%);
     }
 
 }

@@ -2,18 +2,18 @@
 
 
 @import url("../css/fonts.css");
-
+#more {display: none;}
 .meditationPage-wrapper{
 
     .meditationPage-wrapper__content{
-        margin-top:120px;
+        margin-top:60px;
         .content__meditation_block{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 1080px;
-            height: 580px;
+            max-width: 1080px;
+            max-height: 580px;
             margin: 0 auto;
             .meditation_block__textContent{
                 padding: 25px;
@@ -33,6 +33,14 @@
                     height: 103%;
                     border: 1px solid black;
                     position: absolute;
+
+                }
+                &:hover{
+                    &:before{
+                        transform: translate(-10px,-20px);
+                        transition: 1s;
+                        
+                    }
                 }
                 .textContent__title{
                     margin-top:10px;
@@ -52,7 +60,6 @@
                         font-size: 14px;
                         line-height: 150%;
                         text-transform:lowercase ;
-                        transform: translateY(10px);
                         color: rgb(79, 78, 78);
                     }
                 }            
@@ -60,9 +67,10 @@
                     width: 100%;
                     display: flex;
                     justify-content: space-evenly;
-                    *{
+                    .whiteButton, .popupButton{
                         margin:5px;
                     }
+                    z-index:10000;
                 }
                 .textContent__description{
                     font-family: 'Gilroy Light';
@@ -75,15 +83,108 @@
             .meditation_block__imageSwiper{
                 width: 50%;
                 margin: 10px;
-                background-color: red;
                 height: 100%;
+                img{
+                    width: 100%;
+                    height: fit-content;
+                    border-radius: 5px;
+                }
             }
 
 
         }
         .meditation_additionalInfo{
-            height: 100vh;
-            width: 100%;
+            max-width: 920px;
+            max-height: 312px;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            justify-content: space-between;
+            .meditation_additionalInfo__text{
+                margin-top: 100px;
+                padding: 50px;
+                padding-top: 0px;
+                padding-left: 0px;
+                max-width: 80%;
+                .additionalInfo__title{
+                    
+                }
+                .additionalInfo_content{
+                    font-family: 'Gilroy Light';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+                .additionalInfo_readMore{
+
+                }
+            }
+            .meditation_additionalnfo__iconsBlock{
+                margin-top:100px;
+                display: grid;
+                grid-template: repeat(2,1fr)/repeat(2,1fr);
+                max-height: 50px;
+                max-width: 20%;
+                gap:auto;
+                p{
+                    font-family: 'Gilroy Light';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    width: fit-content;
+                    text-align: center;
+                    
+                }
+                .inconsBlock__icon{
+                    img{
+                        width: 50px;
+                    }
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+
+        }
+        .meditation_video{
+            .meditation_video__source{
+                .meditation_frame{
+                    min-width: 600px;
+                    min-height: 600px;
+                }
+            }
         }
     }    
+}
+@media screen and (max-width: 600px) {
+    .meditationPage-wrapper{
+        .meditationPage-wrapper__content{
+            .content__meditation_block{
+                flex-direction: column;
+                .meditation_block__textContent{
+                    width: 90%;
+                    
+                }
+                .meditation_block__imageSwiper{
+                    width: 90%;
+                }
+            }
+            .meditation_additionalInfo{
+                flex-direction: column;
+                
+                .meditation_additionalInfo__text{
+                    .additionalInfo_content{
+                        margin-top:100px;
+                    }
+                    
+                }
+            }
+            
+        }
+    }
 }

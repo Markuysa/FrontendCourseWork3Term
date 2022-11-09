@@ -19,13 +19,13 @@
 }
 .main-wrapper .first_page .main__firstPage .firstPage__title .firstPage_title__header {
   font-family: "Gilroy Light";
-  color: #FBD784;
+  color: #f7cd6c;
   font-size: 18px;
   text-transform: uppercase;
-  transform: translate(0, -100%);
 }
 .main-wrapper .first_page .main__firstPage .firstPage__title .firstPage_title__header .title__header_rect {
   background-image: url("../img/Rectangle 2.1.png");
+  filter: brightness(1.1);
   background-position: left center;
   background-repeat: no-repeat;
   padding-left: 100px;

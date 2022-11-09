@@ -7,7 +7,7 @@ const Meditation = (props)=>{
                     <div className="meditation-card__image">
                         <img src={props.meditation.img} alt="" />
                     </div>
-                    <div className="medi    tation-card__textContent">
+                    <div className="meditation-card__textContent">
                         <p>{props.meditation.title}</p>
                         <div className="meditation-card__textContent__readMore">
                             <span className="icon"><a href="">read more</a></span>

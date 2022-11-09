@@ -2,7 +2,9 @@
 @import url("../css/fonts.css");
 
 
+
 .meditations_list_content{
+    
     gap:20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));

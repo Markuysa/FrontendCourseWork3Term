@@ -6,7 +6,7 @@ const PageLeftAlign= ({page})=>{
                         <div style={{right:0 }} className="page-wrapper-content__numberImage">
                         </div>
                         <div className="page-wrapper-content__image">
-                            {/* <img src = {page.img} alt="an image" />   */}
+                            {/* <img src = {require(page.img)} alt="an image" />   */}
                         </div>
                         <div className="page-wrapper-content__text">
                             <span className="text__header_top">{page.topTitle}</span>

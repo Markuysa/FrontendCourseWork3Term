@@ -4,7 +4,7 @@ import InputField from '../UI/InputField/InputFiels';
 import InputFieldForm from '../UI/InputFieldForm/InputFieldForm';
 import Logotype from '../UI/Logotype/Logotype';
 import TransparentButton from '../UI/transparentButton/TransparentButton';
-const Login = () =>{
+const SignUp = () =>{
 
     return(
         <div className="login-wrapper">
@@ -13,7 +13,7 @@ const Login = () =>{
             </ div>
             <div className="login-background"></div>
             <div className="login-container">
-                <h1>Welcome Back</h1>
+                <h1>Welcome </h1>
                 <form action="post" className="form">
                     <div className="form__inputFields">
                         <section>
@@ -25,23 +25,30 @@ const Login = () =>{
                             <label htmlFor="password">Password</label> 
                             <InputFieldForm type="password" name='Password' placeholder="Password"/>
                         </section>
-                    </div>
-                    <div className="form__additionalFeatures">
                         <section>
-                            <label htmlFor="checkbox">Remember me</label> 
+                            <label htmlFor="name">Name</label> 
+                            <InputFieldForm type="text" name='name' placeholder="Name"/>
+                        </section>
+                        <section>
+                            <label htmlFor="dob">Day of birth</label> 
+                            <InputFieldForm type="date" name='dob' placeholder="Day ob birth"/>
+                        </section>
+                        <div className="form__additionalFeatures">
+                        <section>
+                            <label htmlFor="checkbox">I agree with policy WISH</label> 
                             <input type="checkbox" />
                         </section>
-                        <a href="#"><span>Forgot password</span></a>
+
+                    </div>
                     </div>
                     <div className="form__buttonsBlock">
-                        <Button>Sign in</Button>
+                        <Button>Register</Button>
                         <p>or</p>
-                        <TransparentButton>Sign in with Google</TransparentButton>
+                        <TransparentButton>Sign up with Google</TransparentButton>
                     </div>
                 </form>
-                <span className='signUpSpan'>Don't fave an account? <a href='/signUp'>Sign up here</a></span>
+                <span className='signUpSpan'>Already have an account? <a href='/login'>Sign in here</a></span>
             </div>
-
         </div>
         
 
@@ -49,4 +56,4 @@ const Login = () =>{
 
 }
 
-export default Login;
+export default SignUp;

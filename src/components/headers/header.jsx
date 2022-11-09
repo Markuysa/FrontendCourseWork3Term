@@ -15,11 +15,11 @@ const HeaderMain = () => {
                 <ul className="options_list">
                     <a href='/meditations'><li className="options_list_item">Meditate</li></a>
                     <a href='/login'><li className="options_list_item">About us</li></a>
-                    <a href='#'><li className="options_list_item">Blog</li></a>
+                    <a href='/profile'><li className="options_list_item">Blog</li></a>
                 </ul>
             </div>
             <div className="header_account">
-                <a onClick={onAccountClick}><span className="icon">Account</span></a>
+                <span className="icon">Account</span>
                 <div className="header_account__dropdownMenu">
                     <div><p>Signed in as <a href="">Markuysa</a></p></div>
                     <ul>

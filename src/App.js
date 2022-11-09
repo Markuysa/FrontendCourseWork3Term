@@ -4,6 +4,8 @@ import MeditationsPage from './pages/meditations_list_Page';
 import {BrowserRouter, Routes,Route} from 'react-router-dom'
 import { useState } from 'react';
 import MeditationPage from './pages/meditationPage';
+import SignUp from './pages/signUp';
+import UserProfilePage from './pages/userProfilePage';
 function App() {
 
   const [meditations, setMeditations]= useState([
@@ -23,6 +25,8 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/meditations" element={<MeditationsPage meditations={meditations}/>} />
           <Route path="/meditation" element={<MeditationPage meditations={meditations}/>} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/profile" element={<UserProfilePage />} />
         </Routes>       
       </BrowserRouter>  
     </div>

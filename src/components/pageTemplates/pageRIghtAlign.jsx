@@ -1,5 +1,6 @@
 
 const PageRightAlign= ({page})=>{
+    
     return (
 
         <div className="page-wrapper">
@@ -13,7 +14,7 @@ const PageRightAlign= ({page})=>{
                             <span className="text__header_readMore">read more</span>
                         </div>
                         <div className="page-wrapper-content__image">
-                            {/* <img src = {page.img} alt="an image" />   */}
+                            {/* <img src = {require('D:/Рабочий стол/FrontendCourseWork/frontend_coursework/src/img/contentImages/2.png')} alt="an image" />   */}
                         </div>
                 </div>
         </div>

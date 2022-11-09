@@ -19,10 +19,9 @@
 }
 .meditation-card-wrapper .meditation {
   display: block;
-  border: 3px solid #caeb47;
+  border: 3px solid #000000;
   border-radius: 3px;
   position: relative;
-  background: rgba(202, 235, 71, 0.2039215686);
   margin: 0 20px 20px 0;
   text-decoration: none;
   color: #474747;
@@ -45,7 +44,8 @@
   bottom: 0;
   font-family: "Gilroy Light";
   padding: 20px;
-  background-color: rgb(227, 237, 153);
+  background: rgba(218, 219, 218, 0.422);
+  margin-top: 10px;
 }
 .meditation-card-wrapper .meditation-card__textContent .meditation-card__textContent__readMore {
   display: flex;
