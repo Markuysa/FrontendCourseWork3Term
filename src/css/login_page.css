@@ -26,9 +26,6 @@
   margin: 15px;
 }
 .login-wrapper .login-container {
-  background: rgba(33, 51, 39, 0.085);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 50px;
   width: -webkit-fit-content;

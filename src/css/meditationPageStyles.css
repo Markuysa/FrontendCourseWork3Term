@@ -138,8 +138,8 @@
   width: 50px;
 }
 .meditationPage-wrapper .meditationPage-wrapper__content .meditation_video .meditation_video__source .meditation_frame {
-  min-width: 600px;
-  min-height: 600px;
+  min-width: 100em;
+  min-height: 100ex;
 }
 
 @media screen and (max-width: 600px) {

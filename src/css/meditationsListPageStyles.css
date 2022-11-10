@@ -1,5 +1,5 @@
 .meditations_page-wrapper {
-  background-color: #ebf9f2;
+  background-color: #f7f3f3;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -29,6 +29,7 @@
   .meditations_page__content .meditations_page__content_asideBar {
     grid-row: 1/2;
     grid-column: span 2;
+    display: none;
   }
   .meditations_page__content .meditations_page__content_asideBar .asideBarItems {
     width: 100%;

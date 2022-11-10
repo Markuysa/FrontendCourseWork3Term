@@ -30,7 +30,7 @@
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   color: black;
-  max-width: 80%;
+  width: 80%;
   padding: 100px;
   position: relative;
 }
@@ -69,4 +69,14 @@
   background-color: black;
   color: white;
   transition: 0.8s;
+}
+
+.popup__title iframe {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .popup__content {
+    padding: 0;
+  }
 }

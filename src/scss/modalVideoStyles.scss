@@ -23,14 +23,17 @@
   justify-content: center;
   min-height: 100%;
   padding: 0px 100px;
+  
+  
 }
 .popup__content{
   background: rgba(255, 255, 255, 0.721);
   backdrop-filter: blur(10px);
   color:black;
-  max-width: 80%;
+  width: 80%;
   padding: 100px;
   position: relative;
+  
 }
 .popup__close{
   text-decoration: none;
@@ -62,4 +65,17 @@
   background-color: black;
   color: white;
   transition: .8s;
+}
+
+.popup__title{
+  
+  iframe{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .popup__content{
+    padding: 0;  
+  }
 }

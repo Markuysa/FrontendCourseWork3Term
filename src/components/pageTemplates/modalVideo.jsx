@@ -35,8 +35,7 @@ const ModalVideo = ({props})=>{
                                 className="modal__video-style"
                                 loading="lazy"
                                 
-                                width="750px"
-                                height="550px"
+                                height="500px"
                                 
                                 src="https://www.youtube.com/embed/4UZrsTqkcW4"
                                 title="YouTube video player"

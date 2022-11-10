@@ -87,37 +87,19 @@ html{
             }     
         }
     }
-    // .header_account__asideMenu{
-    //     height: 100vw;
-    //     right: 0;
-    //     width: 30%;
-    //     transform:translateX(100%);
-    //     position: absolute;
-    //     background-color: red;
-    //     li{
-    //         font-size: 18px;
-    //         margin: 20px;
-    //     }
-    // }
     .header_logo{
         font-family:'Chronicle Display Semibold',"Times New Roman";
         font-size: 30px;
     }
 
 }
+.burger__icon{
+    visibility: hidden;
+}
 
-// .header_account__asideMenu.active{
-//         transition: 1s;
-//         transform: translateX(0);
-    
-
-// }
-/*Убрать полосу прокрутки у элемента*/
 .element::-webkit-scrollbar {
     width: 0;
   }
-  
-  /*Убрать полосу прокрутки для всей страницы*/
   ::-webkit-scrollbar {
     width: 0;
   }

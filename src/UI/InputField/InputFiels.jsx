@@ -6,7 +6,7 @@ const InputField= (props) => {
         // <input type = {props.type} class={classes.input} placeholder={props.placeholder}/>
         <div className={classes.inputField}>
             <input {...props} className={classes.input_field}></input>
-            <button className={classes.input_button} type="submit"></button>
+            {/* <button className={classes.input_button} type="submit"></button> */}
         </div>
     );
 

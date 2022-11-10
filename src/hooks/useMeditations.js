@@ -1,4 +1,5 @@
 import {useMemo} from 'react'
+import { IoCloseOutline } from 'react-icons/io5';
 
 export const useSortedMeditations = (meditations,selectedSort)=>{
     
@@ -13,13 +14,25 @@ export const useSortedMeditations = (meditations,selectedSort)=>{
 
 }
 
-export const useSortedAndSearchMeditations = (meditations,selectedSort,searchQuery)=>{
+export const useSortedAndSearchMeditations = (meditations,selectedSort,searchQuery,selectedFilter)=>{
 
     const sortedMeditations=useSortedMeditations(meditations,selectedSort);
-    console.log(sortedMeditations)
+    const sortedFilteredMeditations = useFiltered(sortedMeditations,selectedFilter);
     const sortedAndSearchedMeditations = useMemo(()=>{
-        return sortedMeditations.filter(meditation => meditation.title.toLowerCase().includes(searchQuery.toLowerCase()))
-    },[sortedMeditations,searchQuery])    
+        return sortedFilteredMeditations.filter(meditation => meditation.title.toLowerCase().includes(searchQuery.toLowerCase()))
+    },[sortedFilteredMeditations,searchQuery])    
 
     return sortedAndSearchedMeditations;
+}
+
+export const useFiltered = (meditations,selectedFilter)=>{
+    const sortedFilteredMeditations= useMemo(()=>{
+        if (selectedFilter){
+            return [...meditations].filter(meditation => meditation.categories.indexOf(selectedFilter.toLowerCase())!= -1)
+        }
+        return meditations;
+    },[selectedFilter,meditations]);
+
+    return sortedFilteredMeditations;
+
 }

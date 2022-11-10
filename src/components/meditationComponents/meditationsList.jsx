@@ -24,32 +24,56 @@ const MeditationsList= ({meditations, onMeditationsChange})=>{
 
     const [searchQuery, setSearchQuery]= useState('')
     const [selectedSort,setSelectedSort]=useState('')
+    const [selectedFilter,setSelectedFilter]=useState('')
     const [optionsList, setOptionsList]=useState([
         {name:"By rating",value: "rating"},
         {name:"By name",value: "title"}
     ]);
+    const [optionsListFilter, setOptionsListFilter]=useState([
+        {name:"To sleep",value: "sleep"},
+        {name:"To study",value: "study"},
+        {name:"To relax",value: "relax"}
+    ]);
+
     const sortMeditations = (sort) =>{
         setSelectedSort(sort)
+        
     }
-    const sortedAndSearchedMeditations = useSortedAndSearchMeditations(meditations,selectedSort,searchQuery);
+    const fitlerMeditations = (filter)=>{
+        setSelectedFilter(filter)
+    }
+    const sortedAndSearchedMeditationsFilter = useSortedAndSearchMeditations(meditations,selectedSort,searchQuery,selectedFilter);
     return (
         <ul className="meditations_list_cards">
             <div className="search_fields">
-
-                <MeditationsSelect 
-                    defaultValue={"Sort by"} 
-                    options = {optionsList} 
-                    value={selectedSort}    
-                    onChange = {sortMeditations}
-                />
-                <InputField 
-                    placeholder ="Filter meditations"
-                    value = {searchQuery}
-                    onChange = {event => setSearchQuery(event.target.value)}
-                />
+                <div className="search_fields__select">
+                    <div className="search_fields__select">
+                        <MeditationsSelect 
+                            defaultValue={"Sort by"} 
+                            options = {optionsList} 
+                            value={selectedSort}    
+                            onChange = {sortMeditations}
+                        />
+                    </div>
+                    <div className="filter_fields__select">
+                        <MeditationsSelect 
+                            defaultValue={"Filter by category"} 
+                            options = {optionsListFilter} 
+                            value={selectedFilter}    
+                            onChange = {fitlerMeditations}
+                        />
+                    </div>
+                </div>
+                <div className="search_fields__search">
+                    <InputField 
+                        placeholder ="Filter meditations"
+                        value = {searchQuery}
+                        onChange = {event => setSearchQuery(event.target.value)}
+                    />
+                </div>
             </div>
-            {sortedAndSearchedMeditations.length
-                ?sortedAndSearchedMeditations.map( (meditation)=>
+            {sortedAndSearchedMeditationsFilter.length
+                ?sortedAndSearchedMeditationsFilter.map( (meditation)=>
                     <Meditation 
                         meditation = {meditation} 
                         key={meditation.id} 

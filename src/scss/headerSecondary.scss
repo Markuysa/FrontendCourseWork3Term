@@ -1,4 +1,49 @@
 @import url("../css/fonts.css");
+.header-secondary__wrapper{
+    width: 100%;
+    background-color: #fffff0bf;
+    .header-secondary__navigation__list_hidden{
+        padding: 10px;
+        transition: 1s;
+        // visibility: collapse;
+        // opacity: 0;
+        z-index: 1000000;
+        width: 100%;
+        text-align: center;
+        .close_button{
+            font-size: 23px;
+            cursor: pointer;
+            margin: 10px;
+            display: block;
+            width: fit-content;
+            margin:  0 auto;
+        }
+        li{
+            &:hover{
+                background-color: rgb(175, 159, 159);
+                transition: .8s;
+            }
+            padding: 10px;
+            font-family: "Chronicle Display Semibold";
+            width: fit-content;
+            font-family: 'Gilroy Light';
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 5px;
+            font-size: 14px;
+            line-height: 21px;
+            cursor: pointer;
+            text-transform: uppercase;
+            color:black;
+            width: 100%;
+        }
+        background-color: white;
+        position:fixed;
+        
+        top:0;
+        transform: translateY(-100%);
+    }
+}
 
 .header-secondary__content{
     // background-color: #E6D690;
@@ -6,14 +51,13 @@
     margin-top:10px;
     height: fit-content;
     margin: 0 auto;
-
     padding: 10px;
     .header-secondary__main_nav{
-
         display: flex;
         flex-direction: row;
         align-items:center;
         justify-content: space-between;
+        position: relative;
         .header-secondary__navigation{
             .header-secondary__navigation__list{
                 display: flex;
@@ -23,9 +67,28 @@
                 li{
                     font-family: "Chronicle Display Semibold";
                     margin:10px;
+                    width: fit-content;
+                    font-family: 'Gilroy Light';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    cursor: pointer;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #333333;
+                    &:hover{
+                        color:black;
+                        transform:scale(1.01);
+                    }
                 }
-            }
-            
+            }            
+        }
+        .burger_block{
+            position: relative;
+            top:25%;
+            left:0;
         }
         .header-secondary__logotype{
             margin:0 auto;
@@ -35,6 +98,22 @@
         }
         .header-secondary__account{
             font-family: "Chronicle Display Semibold";
+            margin:10px;
+            width: fit-content;
+            font-family: 'Gilroy Light';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            cursor: pointer;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #333333;
+            &:hover{
+                color:black;
+                transform:scale(1.01);
+            }
         }
     }
     .header-secondary__searchItems{
@@ -43,4 +122,10 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 625px) {
+    .eader-secondary__navigation{
+        display: none;
+    }
 }
