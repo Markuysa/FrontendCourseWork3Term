@@ -3,7 +3,7 @@
 
 .meditations_select_class{
     display: block;
-    max-width:300px ;
+    max-width:100%;
     background-color: rgb(255, 255, 255);
 
     border: 1px solid black;

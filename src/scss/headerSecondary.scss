@@ -1,7 +1,8 @@
 @import url("../css/fonts.css");
 .header-secondary__wrapper{
     width: 100%;
-    background-color: #fffff0bf;
+    // background-color: #fffff0bf;
+    background-color: transparent;
     .header-secondary__navigation__list_hidden{
         padding: 10px;
         transition: 1s;
@@ -44,7 +45,9 @@
         transform: translateY(-100%);
     }
 }
-
+.secondaryBurger{
+    display: none;
+}
 .header-secondary__content{
     // background-color: #E6D690;
     max-width: 1200px;
@@ -53,6 +56,7 @@
     margin: 0 auto;
     padding: 10px;
     .header-secondary__main_nav{
+        
         display: flex;
         flex-direction: row;
         align-items:center;
@@ -128,4 +132,21 @@
     .eader-secondary__navigation{
         display: none;
     }
+    .secondaryBurger{
+        display: block;
+        position: absolute;
+
+    }   
+    .header-secondary__logotype{
+        transform: translateX(20px);
+    }
+}
+
+@media screen and (min-width:626px){
+    .header-secondary__wrapper{
+        .header-secondary__navigation__list_hidden{
+            display: none;
+        }
+    }
+
 }

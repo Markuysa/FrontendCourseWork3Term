@@ -42,7 +42,9 @@ const HeaderSecondary = ()=>{
                             <a href=""><li>Blog</li></a>
                         </ul>
                     </nav>
-                    <BurgerButton />
+                    <div className="secondaryBurger">
+                        <BurgerButton />
+                    </div>
                     <div className="header-secondary__logotype">
                         <Logotype />
                     </div>

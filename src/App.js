@@ -6,6 +6,7 @@ import { useState } from 'react';
 import MeditationPage from './pages/meditationPage';
 import SignUp from './pages/signUp';
 import UserProfilePage from './pages/userProfilePage';
+import ErrorPage from './pages/404Page';
 function App() {
 
   const [meditations, setMeditations]= useState([
@@ -27,6 +28,7 @@ function App() {
           <Route path="/meditation" element={<MeditationPage meditations={meditations}/>} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/profile" element={<UserProfilePage />} />
+          <Route path="/errorPage" element={<ErrorPage/>} />
         </Routes>       
       </BrowserRouter>  
     </div>

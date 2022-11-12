@@ -1,19 +1,17 @@
 
-import Page from "./page";
-import "../../css/secondaryPagesStyle.css"
 
-const SecondMainPage= ({page})=>{
+const FirstPageSecondary = ({page})=>{
     return (
         <div className="page-wrapper">
                     <div className="page-wrapper-content">
 
-                        <div className="page-wrapper-content__image second">
+                        <div className="page-wrapper-content__image first">
                             <div className="page-wrapper-content__image__item">
                             
                             </div>
                         </div>
                         <div className="textContentPage">
-                            <div style={{right:0 }} className="page-wrapper-content__numberImage second">
+                            <div style={{right:0 }} className="page-wrapper-content__numberImage first">
                             </div>
                             <div className="page-wrapper-content__text">
                                 <span className="text__header_top">{page.topTitle}</span>
@@ -27,5 +25,4 @@ const SecondMainPage= ({page})=>{
     );
 }
 
-
-export default SecondMainPage;
+export default FirstPageSecondary;

@@ -14,8 +14,8 @@
 }
 .main-wrapper .first_page .main__firstPage .firstPage__title {
   position: absolute;
-  bottom: 15vh;
-  left: 20vh;
+  bottom: 10%;
+  left: 10%;
 }
 .main-wrapper .first_page .main__firstPage .firstPage__title .firstPage_title__header {
   font-family: "Gilroy Light";
@@ -54,8 +54,14 @@
   height: 100vh;
   background: #759B80;
   width: 100%;
-  position: relative;
+  overflow: hidden;
 }
 .main-wrapper .third_landing, .main-wrapper .fourth_landing {
   z-index: -1;
+}
+
+@media screen and (max-width: 810px) {
+  .firstPage_title_descriprion {
+    font-size: 12px;
+  }
 }

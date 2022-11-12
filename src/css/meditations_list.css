@@ -37,6 +37,10 @@
 }
 
 @media screen and (max-width: 625px) {
+  .meditation_page__content {
+    margin: 0;
+    display: none;
+  }
   .meditations_list_cards .search_fields {
     flex-direction: column;
   }

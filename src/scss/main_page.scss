@@ -10,9 +10,9 @@
         .main__firstPage{
             height: 100vh;
             .firstPage__title{
-                position: absolute;
-                bottom: 15vh;
-                left:20vh;
+                position:absolute;
+                bottom: 10%;
+                left:10%;
                 .firstPage_title__header{
                     font-family: "Gilroy Light";
                     color: #f7cd6c;
@@ -55,9 +55,20 @@
         height: 100vh;
         background: #759B80;
         width: 100%;
-        position: relative;
+        overflow: hidden;
     }
     .third_landing,.fourth_landing{
         z-index: -1;
     }
+}
+
+
+
+@media screen and (max-width: 810px) {
+
+
+    .firstPage_title_descriprion{
+        font-size: 12px;
+    }
+    
 }

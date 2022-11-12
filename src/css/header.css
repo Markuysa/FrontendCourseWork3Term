@@ -4,6 +4,43 @@ html {
   box-sizing: border-box;
 }
 
+.header__navigation__list_hidden {
+  position: absolute;
+  width: 100%;
+  background-color: red;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 100000000000;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: 1s;
+}
+.header__navigation__list_hidden li {
+  padding: 10px;
+  font-family: "Chronicle Display Semibold";
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Gilroy Light";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: black;
+  width: 100%;
+}
+.header__navigation__list_hidden li:hover {
+  background-color: rgb(175, 159, 159);
+  transition: 0.8s;
+}
+
 .header {
   overflow: hidden;
   width: 100%;
@@ -31,41 +68,32 @@ html {
   transform: scale(1.1);
   transition: 0.6s;
 }
-.header .header_account {
-  font-family: "Gilroy Bold";
-  color: rgb(0, 0, 0);
-  position: relative;
-}
-.header .header_account .icon {
-  background-image: url("../img/user.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-  padding-left: 25px; /* Or size of icon + spacing */
-}
-.header .header_account .header_account__dropdownMenu {
+.header .header_account_drop .header_account__dropdownMenu {
   visibility: collapse;
-  background-color: red;
+  opacity: 0;
+  background: rgba(91, 100, 99, 0.6274509804);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border-radius: 5px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  position: absolute;
+  position: fixed;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  right: 20px;
   z-index: 1000;
 }
-.header .header_account .header_account__dropdownMenu div {
+.header .header_account_drop .header_account__dropdownMenu div {
   padding: 20px;
 }
-.header .header_account .header_account__dropdownMenu div a {
+.header .header_account_drop .header_account__dropdownMenu div a {
   color: white;
 }
-.header .header_account .header_account__dropdownMenu div::after {
+.header .header_account_drop .header_account__dropdownMenu div::after {
   width: 100%;
   height: 1px;
-  transform: translateX(-10%);
+  transform: translateX(-9%);
   background-color: black;
   position: absolute;
   content: "";
@@ -73,12 +101,46 @@ html {
   align-items: center;
   justify-content: center;
 }
-.header .header_account .header_account__dropdownMenu li {
-  font-size: 18px;
-  margin: 20px;
+.header .header_account_drop .header_account__dropdownMenu li, .header .header_account_drop .header_account__dropdownMenu p {
+  font-family: "Chronicle Display Semibold";
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Gilroy Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
 }
-.header .header_account:hover .header_account__dropdownMenu {
-  visibility: visible;
+.header .header_account_drop .header_account__dropdownMenu li a, .header .header_account_drop .header_account__dropdownMenu p a {
+  color: rgb(131, 192, 84);
+}
+.header .header_account_drop .header_account__dropdownMenu li {
+  padding: 10px;
+}
+.header .header_account_drop .header_account__dropdownMenu li:hover {
+  transform: scale(1.07);
+  transition: 1s;
+}
+.header .header_account_drop .header_account__dropdownMenu ul {
+  margin-left: 0px;
+}
+.header .header_account_drop .header_account {
+  font-family: "Gilroy Bold";
+  color: rgb(0, 0, 0);
+  display: block;
+}
+.header .header_account_drop .header_account .icon {
+  background-image: url("../img/user.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 25px; /* Or size of icon + spacing */
 }
 .header .header_logo {
   font-family: "Chronicle Display Semibold", "Times New Roman";
@@ -89,10 +151,59 @@ html {
   visibility: hidden;
 }
 
+.mainHeaderBurger {
+  display: none;
+}
+
+.hiddenLogotype {
+  display: none;
+  font-family: "Chronicle Display Semibold", "Times New Roman";
+  font-size: 30px;
+}
+
 .element::-webkit-scrollbar {
   width: 0;
 }
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+.header .header_account_drop {
+  cursor: pointer;
+}
+.header .header_account_drop .header_account__dropdownMenu.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
+@media screen and (max-width: 810px) {
+  .header_logo {
+    display: none;
+  }
+  .mainHeaderBurger {
+    display: block;
+  }
+  .hiddenLogotype {
+    display: block;
+    transform: translate(-10px, 10px);
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+  }
+  .header_options_list {
+    display: none;
+  }
+  .firstPage__title .firstPage_title_descriprion h1 {
+    font-size: 45px;
+  }
+  .firstPage__title .firstPage_title__header span {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 811px) {
+  .header__navigation__list_hidden {
+    display: none;
+  }
 }

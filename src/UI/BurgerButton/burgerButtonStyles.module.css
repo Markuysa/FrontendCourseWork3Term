@@ -3,8 +3,8 @@
     width: 50px;
     height: fit-content;
     margin:10px;
-    position: absolute;
-    visibility: collapse;
+    /* position: absolute;
+    visibility: collapse; */
 }
 .burger__middle_line{
     width: 50%;
