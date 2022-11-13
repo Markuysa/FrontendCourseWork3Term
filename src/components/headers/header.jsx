@@ -62,10 +62,12 @@ const HeaderMain = () => {
                 <div className="hiddenLogotype">
                     <p>WISH</p>
                 </div>
+                <div>
                 <div className="header_account_drop">
                     <div className="header_account">
                         <span className="icon" onClick={onAccountClick}>Account</span>
                     </div>
+                </div>
                     <div className="header_account__dropdownMenu">
                         <div><p>Signed in as <a href="">Markuysa</a></p></div>
                         <ul>
@@ -78,7 +80,7 @@ const HeaderMain = () => {
                 </div>
             </header>
             <ul className="header__navigation__list_hidden">
-                <a href="/"><li>To main page</li></a>
+                <a href="/meditations"><li>Meditate</li></a>
                 <a href=""><li>About us</li></a>
                 <a href=""><li>Blog</li></a>
                 <span className="close_button">X</span>

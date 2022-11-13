@@ -70,66 +70,6 @@ html{
         }
     }
     .header_account_drop{
-        .header_account__dropdownMenu{
-            visibility: collapse;
-            opacity: 0;
-            background:#5b6463a0;
-            backdrop-filter: blur(10px);
-            border-radius: 5px;
-            width:max-content;
-            position: fixed;
-            height: fit-content;
-            
-            z-index: 1000;
-            div{
-                a{
-                    color: white;
-    
-                }
-                padding: 20px;
-                &::after{
-                    width: 100%;
-                    height: 1px;
-                    transform: translateX(-9%); // padding 20px ==> 100/20 * 2 = 10%
-                    background-color: black;
-                    position: absolute;
-                    content: '';
-                    margin-top:10px;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-            li,p{
-                font-family: "Chronicle Display Semibold";
-                width: fit-content;
-                font-family: 'Gilroy Light';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 21px;
-                cursor: pointer;
-                text-align: center;
-                letter-spacing: 0.05em;
-                text-transform: uppercase;
-                color: white;
-                font-size: 14px;     
- 
-                a{
-                    color: rgb(131, 192, 84);
-                }
-            }
-            li{
-                padding: 10px;
-                &:hover{
-                    transform: scale(1.07);
-                    transition: 1s;
-                    
-                }  
-            }
-            ul{
-                margin-left:0px;
-            }
-        }
         .header_account{
             font-family: "Gilroy Bold";
             color:rgb(0, 0, 0);
@@ -142,6 +82,67 @@ html{
                 
                 padding-left: 25px; /* Or size of icon + spacing */
             }
+        }
+    }
+    .header_account__dropdownMenu{
+        visibility: collapse;
+        opacity: 0;
+        background:#5b6463a0;
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+        width:max-content;
+        position: absolute;
+        z-index:1000;
+        height: fit-content;
+        
+        z-index: 1000;
+        div{
+            a{
+                color: white;
+
+            }
+            padding: 20px;
+            &::after{
+                width: 100%;
+                height: 1px;
+                transform: translateX(-9%); // padding 20px ==> 100/20 * 2 = 10%
+                background-color: black;
+                position: absolute;
+                content: '';
+                margin-top:10px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        li,p{
+            font-family: "Chronicle Display Semibold";
+            width: fit-content;
+            font-family: 'Gilroy Light';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            cursor: pointer;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: white;
+            font-size: 14px;     
+
+            a{
+                color: rgb(131, 192, 84);
+            }
+        }
+        li{
+            padding: 10px;
+            &:hover{
+                transform: scale(1.07);
+                transition: 1s;
+                
+            }  
+        }
+        ul{
+            margin-left:0px;
         }
     }
     .header_logo{
@@ -173,7 +174,7 @@ html{
             visibility: visible;
             opacity: 1;
             transition: 1s;
-          }
+        }
     }
   }
   

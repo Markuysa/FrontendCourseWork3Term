@@ -44,7 +44,7 @@ const MeditationsList= ({meditations, onMeditationsChange})=>{
     }
     const sortedAndSearchedMeditationsFilter = useSortedAndSearchMeditations(meditations,selectedSort,searchQuery,selectedFilter);
     return (
-        <ul className="meditations_list_cards">
+        <div className="meditations_list_cards">
             <div className="search_fields">
                 <div className="search_fields__select">
                     <div className="search_fields__select">
@@ -72,16 +72,18 @@ const MeditationsList= ({meditations, onMeditationsChange})=>{
                     />
                 </div>
             </div>
-            {sortedAndSearchedMeditationsFilter.length
-                ?sortedAndSearchedMeditationsFilter.map( (meditation)=>
-                    <Meditation 
-                        meditation = {meditation} 
-                        key={meditation.id} 
-                    />
-                )           
-                : <div className="notFoundPage"><p>No results</p></div>
-            }
-        </ul>
+            <div className="meditations_content">
+                {sortedAndSearchedMeditationsFilter.length
+                    ?sortedAndSearchedMeditationsFilter.map( (meditation)=>
+                        <Meditation 
+                            meditation = {meditation} 
+                            key={meditation.id} 
+                        />
+                    )           
+                    : <div className="notFoundPage"><p>No results</p></div>
+                }
+            </div>
+        </div>
 
     );
 

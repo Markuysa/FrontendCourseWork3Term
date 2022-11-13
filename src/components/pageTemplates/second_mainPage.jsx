@@ -5,7 +5,7 @@ import "../../css/secondaryPagesStyle.css"
 const SecondMainPage= ({page})=>{
     return (
         <div className="page-wrapper">
-                    <div className="page-wrapper-content">
+                    <div className="page-wrapper__content">
 
                         <div className="page-wrapper-content__image second">
                             <div className="page-wrapper-content__image__item">

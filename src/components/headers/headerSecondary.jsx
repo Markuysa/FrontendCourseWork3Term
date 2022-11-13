@@ -55,8 +55,8 @@ const HeaderSecondary = ()=>{
             </div>
             <ul className="header-secondary__navigation__list_hidden">
                 <a href="/"><li>To main page</li></a>
-                <a href=""><li>About us</li></a>
-                <a href=""><li>Blog</li></a>
+                <a href="/errorPage"><li>About us</li></a>
+                <a href="/errorPage"><li>Blog</li></a>
                 <span className="close_button">X</span>
             </ul>
         </div>

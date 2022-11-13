@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  margin-bottom: 10px;
   position: relative;
 }
 .meditations_list_cards .search_fields .filter_fields__select {
@@ -27,6 +27,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .meditations_list_cards .notFoundPage p {
   margin-bottom: 100px;

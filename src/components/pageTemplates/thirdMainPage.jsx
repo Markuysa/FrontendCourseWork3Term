@@ -3,7 +3,7 @@ const ThirdMainPage= ({page})=>{
     
     return (
         <div className="page-wrapper">
-        <div className="page-wrapper-content">
+        <div className="page-wrapper__content">
 
             <div className="page-wrapper-content__image third">
                 <div className="page-wrapper-content__image__item">
