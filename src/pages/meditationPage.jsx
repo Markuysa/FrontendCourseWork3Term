@@ -6,7 +6,7 @@ import ModalVideo from "../components/pageTemplates/modalVideo";
 
 import "../css/meditationPageStyles.css"
 import Button from "../UI/Blackbutton/BlackButton";
-import WhiteButton from "../UI/WhiteButton/WhiteButton";
+import WhiteButton from "../UI/whiteButton/WhiteButton";
     const MeditationPage = ()=>{
         let modalReadMore
         useEffect(()=>{

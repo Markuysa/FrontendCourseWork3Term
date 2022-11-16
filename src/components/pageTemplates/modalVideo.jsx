@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { BiLoaderAlt } from "react-icons/bi";
 import "../../css/modalVideoStyles.css"
-import WhiteButton from "../../UI/WhiteButton/WhiteButton";
+import WhiteButton from "../../UI/whiteButton/WhiteButton";
 const ModalVideo = ({props})=>{
 
 
