@@ -27,10 +27,7 @@ const Login = () =>{
                         </section>
                     </div>
                     <div className="form__additionalFeatures">
-                        <section>
-                            <label htmlFor="checkbox">Remember me</label> 
-                            <input type="checkbox" />
-                        </section>
+                        
                         <a href="#"><span>Forgot password</span></a>
                     </div>
                     <div className="form__buttonsBlock">

@@ -15,7 +15,7 @@
   position: relative;
 }
 .meditations_list_cards .search_fields .filter_fields__select {
-  display: none;
+  margin-left: 10px;
 }
 .meditations_list_cards .search_fields .search_fields__select {
   display: flex;

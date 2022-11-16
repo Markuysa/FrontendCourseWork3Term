@@ -6,6 +6,10 @@
 .meditationPage-wrapper{
 
     .meditationPage-wrapper__content{
+        .footer{
+            width: 100%;
+            height: fit-content;
+        }
         margin-top:60px;
         .content__meditation_block{
             display: flex;
@@ -13,8 +17,9 @@
             justify-content: space-between;
             align-items: center;
             max-width: 1080px;
-            max-height: 580px;
+            max-height: fit-content;
             margin: 0 auto;
+            overflow: hidden;
             .meditation_block__textContent{
                 padding: 25px;
                 height: 100%;
@@ -128,13 +133,14 @@
                 text-align: center;
             }
             .meditation_additionalnfo__iconsBlock{
-
+                gap: 20px;
                 margin: 0 auto;
                 
             }
 
         }
         .meditation_additionalInfo{
+            padding-bottom: 20%;
             .hiddenMeditationMore{
                 display: none;
             }
@@ -207,6 +213,13 @@
 }
 
 @media screen and (max-width: 600px) {
+    .meditation_additionalInfo_modalWindow{
+        .modalMeditationWrapper{
+            .meditation_additionalnfo__iconsBlock{
+                transform: translateX(-20%);
+            }
+        }
+    }
     .meditationPage-wrapper{
         .content__meditation_block{
             .meditation_block__textContent{
@@ -227,20 +240,20 @@
                 }
             }
             .meditation_additionalInfo{
-                flex-direction: column;
+                display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
                 .hiddenMeditationMore{
                     display: block;
-                    margin:100px;
+                    padding: 20px;
                 }
                 .meditation_additionalnfo__iconsBlock{
                     margin:0;
+                    display: none;
                     
                 }
                 .meditation_additionalInfo__text{
-                    display: block;
+                    display: none;
                     .additionalInfo_content{
                         text-align:justify;
                     }

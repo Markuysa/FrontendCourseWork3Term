@@ -14,7 +14,7 @@ const MeditationsPage = ({meditations})=>{
             <HeaderSecondary />
             <div className="meditations_page__content">
                 <div className="meditations_page__content_asideBar">
-                    <AsideBar items={asideItems}/>
+                    {/* <AsideBar items={asideItems}/> */}
                     {/* <MeditationsList meditations={meditations}/> */}
                 </div>
                 <div className="meditations_page__content_list">

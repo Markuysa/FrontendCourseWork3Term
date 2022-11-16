@@ -37,7 +37,7 @@ const ModalVideo = ({props})=>{
                                 
                                 height="500px"
                                 
-                                src="https://www.youtube.com/embed/4UZrsTqkcW4"
+                                src="https://www.youtube.com/embed/kndqIj8Qgok"
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

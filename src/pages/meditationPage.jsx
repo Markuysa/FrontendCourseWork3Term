@@ -31,7 +31,7 @@ import WhiteButton from "../UI/WhiteButton/WhiteButton";
                     <div className="content__meditation_block">
                         <div className="meditation_block__imageSwiper">
                             
-                            <img src="https://media.kg-portal.ru/images/joker/joker_5.jpg" alt="" />
+                            <img src="https://all-mongolia.ru/wp-content/uploads/a/a/7/aa7b09b14283d07d71816651385652cb.jpeg" alt="" />
 
                         </div>
                         <div className="meditation_block__textContent">
@@ -43,8 +43,7 @@ import WhiteButton from "../UI/WhiteButton/WhiteButton";
                                 </div>
                             </div>  
                             <div className="textContent__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit mattis scelerisque odio nunc. Ipsum quis facilisis turpis vulputate. Viverra dignissim in nec phasellus. Tincidunt est ipsum diam, vestibulum dignissim dui diam. Et nulla sit convallis orci est, fames sit luctus lacus. Nunc donec malesuada amet eget eget pharetra. Ultricies et, ac varius at amet viverra feugiat non massa.
-                                Vel vel in urna, sodales urna ac sed felis. Tellus augue et senectus malesuada faucibus sollicitudin ornare. Sit non et sit enim in ornare velit. Ac imperdiet vitae, orci, nec scelerisque enim sit enim risus. 
+                                <p>Your body begins to relax gradually. You feel the tension in your muscles disappear. With each spoken word, every muscle of the body is filled with a feeling of peace and pleasant lethargy. Your breathing is even, calm. Air freely fills the lungs and easily leaves them. The heart beats clearly, rhythmically. Turn your inner gaze to the fingers of your right hand. The coccyx of the fingers of the right hand seems to touch the surface of warm water. You can feel the pulsation in your fingertips. There is a feeling that the hand is gradually immersed in warm water. This magic water washes your right hand, relaxes it and rises up your arm... Up to the elbow... Even higher... Now your whole hand is immersed in a pleasant warmth, relaxes... Fresh, renewed blood runs through the veins
                                 </p>
                             </div>
                             <div className="textContent__buttons">
@@ -57,8 +56,7 @@ import WhiteButton from "../UI/WhiteButton/WhiteButton";
                     <div className="meditation_additionalInfo">
                         <div className="meditation_additionalInfo__text">
                             <p className="additionalInfo_content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, lorem eu commodo porttitor erat. Amet mauris cursus bibendum in egestas. Nulla porttitor amet quam elit, mauris. Tortor egestas dignissim augue suspendisse rutrum pretium lobortis dolor. Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
-                                Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
+                            This meditation is perfect for a morning routine to help prepare your mind for the day ahead or at the end of a hectic day to help ease stress and anxiety. At the start, you’ll get right into body awareness and deep belly breathing. Then, you'll focus on calming racing thoughts. She often pauses to let you just focus on breathing (while listening to waves), which can be difficult for someone with anxiety.
                             </p>
                             {/* <p className="additionalInfo_readMore"></p> */}
                         </div>
@@ -91,8 +89,7 @@ import WhiteButton from "../UI/WhiteButton/WhiteButton";
                         <div className="modalMeditationWrapper">
                             <div className="meditation_additionalInfo__text">
                                 <p className="additionalInfo_content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, lorem eu commodo porttitor erat. Amet mauris cursus bibendum in egestas. Nulla porttitor amet quam elit, mauris. Tortor egestas dignissim augue suspendisse rutrum pretium lobortis dolor. Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
-                                    Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
+                                Turn the beam of your attention to the legs. The feet relax. They feel a pleasant warmth, reminiscent of the heat from the fire burning in the fireplace. It feels like your feet are standing on the grate. A kind, affectionate warmth rises up the legs, giving life-giving relaxation and rest to the muscles... The tension disappears... And now the muscles of the legs relax – from the fingertips to the hip... Breathing is even, calm. The heart beats clearly, rhythmically...
                                 </p>
                                 {/* <p className="additionalInfo_readMore"></p> */}
                             </div>
@@ -120,8 +117,9 @@ import WhiteButton from "../UI/WhiteButton/WhiteButton";
                         
 
                     </div> */}
-                    
-                    <Footer />
+                    <div className="footer">
+                        <Footer />
+                    </div>
                 </div>
             </div>
         );

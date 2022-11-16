@@ -3,26 +3,8 @@ import '../../css/header.css'
 import BurgerButton from '../../UI/BurgerButton/burgerButton';
 import Logotype from '../../UI/Logotype/Logotype';
 const HeaderMain = () => {
-    const onAccountClick=()=>{
-        let counter=0
-        let aside = document.querySelector(".header_account__dropdownMenu");
-        if (counter%2==0){
-            aside.style.visibility = "visible"
-            aside.style.opacity = "1"
-            aside.style.transition = "1s";
-            counter++
-        }
-        else {
-            aside.style.visibility = "collapse"
-            aside.style.opacity = "0"
-            aside.style.transition = "1s";
-            counter++
-        }
-    }
-    useEffect(()=>{
-        let icon = document.querySelector(".icon")
-        icon.addEventListener('click',onAccountClick);
-    })
+    let accountMenu;
+    let accountIcon;
     useEffect(() => {
         let burgerButton = document.querySelector('.mainHeaderBurger')    
         let menu = document.querySelector('.header__navigation__list_hidden')
@@ -42,7 +24,23 @@ const HeaderMain = () => {
         if (visibility=="collapse"){
             menu.style.transform="translateY(-100%)"
         }
+        accountMenu = document.querySelector(".header_account__dropdownMenu")
+        accountIcon = document.querySelector(".icon")
       });
+      let flag = true;
+      const openAccMenu = ()=>{
+        if (flag){
+            accountMenu.style.visibility = "visible"
+            accountMenu.style.opacity = "1"
+            flag = false;
+        }
+        else{
+            accountMenu.style.visibility = "collapse";
+            accountMenu.style.opacity = "0";
+            flag=true;
+            return;
+        }
+        }
     return (
         <div className="headerWrapper">
             <header className="header">
@@ -65,18 +63,18 @@ const HeaderMain = () => {
                 <div>
                 <div className="header_account_drop">
                     <div className="header_account">
-                        <span className="icon" onClick={onAccountClick}>Account</span>
-                    </div>
-                </div>
+                        <span className="icon" onClick={openAccMenu}>Account</span>
                     <div className="header_account__dropdownMenu">
-                        <div><p>Signed in as <a href="">Markuysa</a></p></div>
+                        <div><p>Signed in as <a href="" className='userName'>Markuysa</a></p></div>
                         <ul>
-                            <li>Your profile</li>
-                            <li>Your meditations</li>
-                            <li>Upgrade Pro</li>
-                            <li>Sign out</li>
+                            <a href="/errorPage"><li>Your profile</li></a>
+                            <a href="/errorPage"><li>Your meditations</li></a>
+                            <a href="/errorPage"><li>Upgrade Pro</li></a>
+                            <a href="/errorPage"><li>Sign out</li></a>
                         </ul>
                     </div>
+                    </div>
+                </div>
                 </div>
             </header>
             <ul className="header__navigation__list_hidden">

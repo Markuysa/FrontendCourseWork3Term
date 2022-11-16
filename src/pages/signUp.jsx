@@ -34,10 +34,6 @@ const SignUp = () =>{
                             <InputFieldForm type="date" name='dob' placeholder="Day ob birth"/>
                         </section>
                         <div className="form__additionalFeatures">
-                        <section>
-                            <label htmlFor="checkbox">I agree with policy WISH</label> 
-                            <input type="checkbox" />
-                        </section>
 
                     </div>
                     </div>

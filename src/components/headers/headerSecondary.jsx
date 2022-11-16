@@ -1,5 +1,6 @@
 
 import { Collapse } from "bootstrap";
+import { event } from "jquery";
 import { useEffect } from "react";
 import "../../css/headerSecondary.css"
 import BurgerButton from "../../UI/BurgerButton/burgerButton";
@@ -10,7 +11,8 @@ import MeditationsList from "../meditationComponents/meditationsList";
 
 
 const HeaderSecondary = ()=>{
-
+    let accountMenu;
+    let accountIcon;
     useEffect(() => {
         let burgerButton = document.querySelector('.burgerButtonStyles_burger__icon__ronxw')    
         let menu = document.querySelector('.header-secondary__navigation__list_hidden')
@@ -30,7 +32,24 @@ const HeaderSecondary = ()=>{
         if (visibility=="collapse"){
             menu.style.transform="translateY(-100%)"
         }
+        accountMenu = document.querySelector(".header-secondary_account__dropdownMenu")
+        accountIcon = document.querySelector(".icon")
+        //accountIcon.addEventListener('click',openAccMenu);
       });
+      let flag = true;
+      const openAccMenu = ()=>{
+        if (flag){
+            accountMenu.style.visibility = "visible"
+            accountMenu.style.opacity = "1"
+            flag = false;
+        }
+        else{
+            accountMenu.style.visibility = "collapse";
+            accountMenu.style.opacity = "0";
+            flag=true;
+            return;
+        }
+    }
     return (
         <div className="header-secondary__wrapper">
             <div className="header-secondary__content">
@@ -49,7 +68,16 @@ const HeaderSecondary = ()=>{
                         <Logotype />
                     </div>
                     <div className="header-secondary__account">
-                        <span className="icon">Account</span>
+                        <span className="icon" onClick={openAccMenu}>Account </span>
+                        <div className="header-secondary_account__dropdownMenu">
+                            <div><p>Signed in as <a href="">Markuysa</a></p></div>
+                            <ul>
+                                <a href="/errorPage"><li>Upgrade Pro</li></a>
+                                <a href="/login"><li>Sign in</li></a>
+                                <a href="/signUp"><li>Sign up</li></a>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -57,6 +85,10 @@ const HeaderSecondary = ()=>{
                 <a href="/"><li>To main page</li></a>
                 <a href="/errorPage"><li>About us</li></a>
                 <a href="/errorPage"><li>Blog</li></a>
+                {/* <a href="/errorPage"><li>Your profile</li></a>
+                <a href="/errorPage"><li>Your meditations</li></a>
+                <a href="/errorPage"><li>Upgrade Pro</li></a>
+                <a href="/errorPage"><li>Sign out</li></a> */}
                 <span className="close_button">X</span>
             </ul>
         </div>

@@ -2,7 +2,7 @@
 @import url("../css/fonts.css");
 .meditation-card-wrapper {
   display: block;
-  width: 31.25%;
+  width: 33.33333%;
   float: left;
   transition: width 0.2s;
   overflow: hidden;
@@ -26,7 +26,7 @@
   text-decoration: none;
   color: #474747;
   z-index: 0;
-  height: 300px;
+  height: 400px;
 }
 .meditation-card-wrapper .meditation-card__image {
   overflow: hidden;

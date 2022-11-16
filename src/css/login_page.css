@@ -39,6 +39,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
+  margin: 10px;
 }
 .login-wrapper .login-container .signUpSpan a {
   color: black;
@@ -61,11 +62,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
+  position: relative;
 }
-.login-wrapper .login-container .form__additionalFeatures input {
-  margin-left: 10px;
+.login-wrapper .login-container .form__additionalFeatures a {
+  color: rgb(45, 44, 44);
+  position: absolute;
+  right: 0;
+  top: 1px;
 }
 .login-wrapper .login-container .form__buttonsBlock {
   display: flex;
@@ -87,4 +91,11 @@
 }
 .login-wrapper .login-container .form__inputFields section {
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .login-wrapper .login-container h1 {
+    font-size: 44px;
+    transform: translateY(20px);
+  }
 }
