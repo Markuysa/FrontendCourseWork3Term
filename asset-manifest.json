@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.318680de.css",
+    "main.js": "/static/js/main.535e834c.js",
+    "static/media/meditation_image.png": "/static/media/meditation_image.dc589cf1674327e298b5.png",
+    "static/media/3.png": "/static/media/3.a3faec8005f4bf993e23.png",
+    "static/media/2.png": "/static/media/2.bc8bc29f2233b00d8b71.png",
+    "static/media/background_login.jpg": "/static/media/background_login.61b9c5462340fd589517.jpg",
+    "static/media/Inter-Bold.otf": "/static/media/Inter-Bold.29a77b7e0aa49b534323.otf",
+    "static/media/Inter-Medium.otf": "/static/media/Inter-Medium.16eda82a3c37a6edda09.otf",
+    "static/media/Inter-Light.otf": "/static/media/Inter-Light.f70b465fac229d73e982.otf",
+    "static/media/Chronicle Display Semibold.otf": "/static/media/Chronicle Display Semibold.c4bd9bb2263eabcbe0a3.otf",
+    "static/media/Chronicle Display Black.otf": "/static/media/Chronicle Display Black.77c17052c8c11c51c180.otf",
+    "static/media/2m.jpg": "/static/media/2m.910088ebcedbec6a4b93.jpg",
+    "static/media/Gilroy-ExtraBold.otf": "/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
+    "static/media/Gilroy-Light.otf": "/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
+    "index.html": "/index.html",
+    "static/media/closeIcon.svg": "/static/media/closeIcon.43acac53cb85a6489dbf.svg",
+    "main.318680de.css.map": "/static/css/main.318680de.css.map",
+    "main.535e834c.js.map": "/static/js/main.535e834c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.318680de.css",
+    "static/js/main.535e834c.js"
+  ]
+}
